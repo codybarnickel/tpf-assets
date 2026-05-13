@@ -124,9 +124,14 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
 .status-bar{display:flex;align-items:center;gap:0}
 .status-stage{display:flex;flex-direction:column;align-items:center;flex:1;position:relative}
 .status-stage:not(:last-child)::after{content:"";position:absolute;top:7px;left:50%;width:100%;height:1px;background:#1A1917;opacity:.2;z-index:0}
-.status-dot{width:10px;height:10px;border:1px solid #1A1917;background:#FAFAF7;position:relative;z-index:1;flex-shrink:0}
-.status-dot.done{background:#1A1917;border-color:#1A1917}
-.status-dot.current{background:#ff006e;border-color:#ff006e}
+.status-dot{width:10px;height:10px;border:1px solid #D0CCC6;background:#FAFAF7;position:relative;z-index:1;flex-shrink:0}
+.status-dot.engaged{background:rgba(255,0,110,.25);border-color:rgba(255,0,110,.25)}
+.status-dot.assessment{background:rgba(255,0,110,.5);border-color:rgba(255,0,110,.5)}
+.status-dot.frame_published{background:#ff006e;border-color:#ff006e}
+.status-dot.briefs_active{background:#ff006e;border-color:#ff006e;box-shadow:inset 0 0 0 2.5px #FAFAF7}
+.status-dot.implementation{background:#8B3020;border-color:#8B3020}
+.status-dot.done{background:#ff006e;border-color:#ff006e}
+.status-dot.current{background:#ff006e;border-color:#ff006e;box-shadow:inset 0 0 0 2.5px #FAFAF7}
 .status-label{font-family:"Archivo Narrow",sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#1A1917;margin-top:.5rem;text-align:center;opacity:.6}
 .status-label.current{color:#ff006e;opacity:1}
 .tile3-bottom{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3rem;margin-top:3rem}
@@ -171,10 +176,14 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
 .org-icon.none svg{opacity:.12;stroke:var(--ink)}
 .org-icon.dark::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:2px;background:#C0392B;transform:translate(-50%,-50%) rotate(-40deg);z-index:10}
 .card-eng{margin-top:.35rem;font-size:9px;color:var(--ink);display:flex;align-items:center;gap:3px;font-family:"Archivo Narrow",sans-serif;letter-spacing:.03em}
-.eng-dot{width:5px;height:5px;border-radius:0;flex-shrink:0}
-.eng-dot.progress{background:#B07020}
-.eng-dot.unengaged{background:#C4BFB4}
-.eng-dot.published{background:#3B6D11}
+.eng-dot{width:6px;height:6px;border-radius:0;flex-shrink:0;border:1px solid #1A1917;background:transparent}
+.eng-dot.engaged{background:rgba(255,0,110,.25);border-color:rgba(255,0,110,.25)}
+.eng-dot.assessment{background:rgba(255,0,110,.5);border-color:rgba(255,0,110,.5)}
+.eng-dot.published{background:#ff006e;border-color:#ff006e}
+.eng-dot.briefs_active{background:#ff006e;border-color:#ff006e;box-shadow:inset 0 0 0 1.5px #FAFAF7}
+.eng-dot.implementation{background:#8B3020;border-color:#8B3020}
+.eng-dot.unengaged{background:transparent;border-color:#1A1917}
+.eng-dot.progress{background:rgba(255,0,110,.5);border-color:rgba(255,0,110,.5)}
 .leg-title{font-family:"Archivo Narrow",sans-serif;font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:.5rem}
 .leg-item{display:flex;align-items:center;gap:4px;font-size:9px;color:var(--ink);margin-bottom:3px;line-height:1.3}
 .leg-item svg{width:10px;height:10px;flex-shrink:0;stroke:var(--ink);fill:none;stroke-width:1.2}
@@ -184,10 +193,13 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
 .leg-strike::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:#C0392B;transform:translate(-50%,-50%) rotate(-40deg)}
 .leg-ghost{opacity:.12;display:inline-flex;width:10px;height:10px;flex-shrink:0}
 .leg-ghost svg{width:10px;height:10px;stroke:var(--ink);fill:none;stroke-width:1.2}
-.leg-dot{width:5px;height:5px;border-radius:0;flex-shrink:0}
-.leg-dot.progress{background:#B07020}
-.leg-dot.unengaged{background:#C4BFB4}
-.leg-dot.published{background:#3B6D11}
+.leg-dot{width:6px;height:6px;border-radius:0;flex-shrink:0;border:1px solid #1A1917;background:transparent}
+.leg-dot.unengaged{background:transparent;border-color:#1A1917}
+.leg-dot.engaged{background:rgba(255,0,110,.25);border-color:rgba(255,0,110,.25)}
+.leg-dot.assessment{background:rgba(255,0,110,.5);border-color:rgba(255,0,110,.5)}
+.leg-dot.published{background:#ff006e;border-color:#ff006e}
+.leg-dot.briefs_active{background:#ff006e;border-color:#ff006e;box-shadow:inset 0 0 0 1.5px #FAFAF7}
+.leg-dot.implementation{background:#8B3020;border-color:#8B3020}
 
 .card-stripe{display:block;width:100%}
 @media(max-width:500px){.entry-lower{grid-template-columns:1fr}.entry-about{padding:1.5rem;border-right:none;border-bottom:1px solid #1A1917}.matrix-wrap{padding:1.5rem}.white-card{padding:1.5rem}.tile1-box,.tile2-box{flex-direction:column;align-items:flex-start;padding:1.5rem;gap:1rem}.tile1-seal{order:-1;width:80px;height:80px;margin-left:0}.tile1-name-col{width:100%}.tile1-data-col,.tile2-data-col{width:100%;padding-top:.5rem}.tile1-data-item{flex-wrap:wrap;gap:.25rem}.brief-tabs{flex-direction:column}.brief-tab{flex:1;width:100%}.lf-right{padding:1.5rem}.lf-below-img{padding:1.5rem}.tile3-card{padding:1.5rem}.tile3-bottom{grid-template-columns:1fr!important;gap:1.5rem}.status-bar{flex-wrap:wrap;justify-content:flex-start;gap:.75rem 0}.status-stage{flex:0 0 33%;min-width:0}.status-stage::after{display:none}.status-label{font-size:8px;letter-spacing:0}}
@@ -220,16 +232,21 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
       <p class="entry-about-body" style="font-weight:300;margin-top:.5rem">Prepared by <a href="https://barnickel.co" target="_blank" style="color:#000;text-decoration:underline">BARNICKEL.co</a></p>
       <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #1A1917">
         <div class="entry-tier-label" style="border:none;padding:0;margin-bottom:.75rem">Legend</div>
-        <div style="display:flex;flex-wrap:wrap;gap:.35rem 1.5rem">
+        <div style="display:flex;flex-wrap:wrap;gap:.35rem 1.5rem;margin-bottom:.5rem">
           <div class="leg-item"><span class="leg-hot">HOT eligible</span></div>
-          <div class="leg-item"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2"><use href="#ico-chamber"/></svg>&nbsp;Chamber</div>
-          <div class="leg-item"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2"><use href="#ico-edc"/></svg>&nbsp;EDC</div>
-          <div class="leg-item"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2"><use href="#ico-dmo"/></svg>&nbsp;DMO</div>
-          <div class="leg-item"><span class="leg-strike"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2"><use href="#ico-edc"/></svg></span>&nbsp;Gone dark</div>
-          <div class="leg-item"><span class="leg-ghost"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2"><use href="#ico-edc"/></svg></span>&nbsp;None confirmed</div>
-          <div class="leg-item"><span class="leg-dot progress"></span>&nbsp;Assessment progress</div>
+          <div class="leg-item"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2;position:relative;top:-2px"><use href="#ico-chamber"/></svg>&nbsp;Chamber</div>
+          <div class="leg-item"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2;position:relative;top:-2px"><use href="#ico-edc"/></svg>&nbsp;EDC</div>
+          <div class="leg-item"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2;position:relative;top:-2px"><use href="#ico-dmo"/></svg>&nbsp;DMO</div>
+          <div class="leg-item"><span class="leg-strike"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2;position:relative;top:-2px"><use href="#ico-edc"/></svg></span>&nbsp;Gone dark</div>
+          <div class="leg-item"><span class="leg-ghost"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2;position:relative;top:-2px"><use href="#ico-edc"/></svg></span>&nbsp;None confirmed</div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:.35rem 1.5rem">
           <div class="leg-item"><span class="leg-dot unengaged"></span>&nbsp;Unengaged</div>
-          <div class="leg-item"><span class="leg-dot published"></span>&nbsp;Frame published</div>
+          <div class="leg-item"><span class="leg-dot engaged"></span>&nbsp;Engaged</div>
+          <div class="leg-item"><span class="leg-dot assessment"></span>&nbsp;Assessment</div>
+          <div class="leg-item"><span class="leg-dot published"></span>&nbsp;Frame Published</div>
+          <div class="leg-item"><span class="leg-dot briefs_active"></span>&nbsp;Briefs Active</div>
+          <div class="leg-item"><span class="leg-dot implementation"></span>&nbsp;Implementation</div>
         </div>
       </div>
     </div>
