@@ -354,8 +354,8 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
         <div class="section-header">Character Brief</div>
         <div class="char-inner">
           <div class="field-label">Vision</div>
-          <div id="lf-onrec-vision"></div>
           <p class="lf-vision" id="lf-vision"></p>
+          <div id="lf-onrec-vision"></div>
           <div class="field-label" style="margin-top:2rem">Values</div>
           <div class="lf-values" id="lf-values"></div>
           <div class="print-brief-wrap"><button class="print-brief-btn" disabled>Print Brief</button></div>
@@ -4211,13 +4211,18 @@ function showLF(id){
     var block = function(e, fallbackLabel){
       var s = '<div class="onrec">';
       if(e.q){ s += '<p class="onrec-q">&ldquo;'+esc(e.q)+'&rdquo;</p>'; }
-      if(e.lead){ s += '<p class="onrec-q">&ldquo;'+esc(e.lead)+(e.items?'':'&rdquo;')+'</p>'; }
-      if(e.items){ s += '<ul class="onrec-list" style="font-size:15px;line-height:1.6">'+e.items.map(function(i,ix){ return '<li>'+esc(i)+(ix===e.items.length-1&&e.lead?'&rdquo;':'')+'</li>'; }).join('')+'</ul>'; }
+      if(e.lead){ s += '<p class="onrec-q">&ldquo;'+esc(e.lead+(e.items?' '+e.items.join(' '):''))+'&rdquo;</p>'; }
       if(e.after){ s += '<p class="onrec-lead" style="margin-top:.5rem">'+esc(e.after)+'</p>'; }
       return s + meta(e, e.label||fallbackLabel) + '</div>';
     };
     var r = d.onRecord || {};
     document.getElementById("lf-onrec-vision").innerHTML = (r.vision||[]).map(function(e){ return block(e,"Vision on record"); }).join('');
+    if((r.vision||[]).length){
+      var isPurpose = (r.vision[0].label||'').indexOf('Purpose') === 0;
+      document.getElementById("lf-vision").textContent = d.vision + (isPurpose
+        ? ' A statement of purpose is already on record here. Assessment starts from it and builds toward a vision the community recognizes as its own.'
+        : ' A vision is already on record here. Assessment starts from it, tests it against present conditions and current voices, and refines it.');
+    }
   })();
 
   // Tile 1
