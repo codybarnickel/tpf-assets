@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
 <title>Trans-Pecos -- Local Frame</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,7 +76,7 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
 .hier-label{font-family:"Archivo Narrow",sans-serif;font-size:8px;font-weight:700;letter-spacing:.1em;color:#ff006e;margin-right:5px;vertical-align:middle;opacity:.7}
 .field-label{font-family:"Archivo Narrow",sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#1A1917;margin-bottom:.6rem}
 .char-inner{padding-top:2rem}
-.lf-vision{font-size:15px;font-weight:400;line-height:1.6;color:#1A1917;margin-bottom:2.5rem}
+.onrec{margin-bottom:1.75rem}.onrec-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#1A1917;opacity:.55;margin-bottom:.5rem}.onrec-q{font-size:15px;line-height:1.6;color:#1A1917;margin:0}.onrec-list{margin:.5rem 0 0 0;padding-left:1.1rem;font-size:13px;line-height:1.65;color:#1A1917}.onrec-lead{font-size:13px;line-height:1.65;color:#1A1917;margin:0 0 .25rem 0}.onrec-meta{font-size:11px;line-height:1.5;color:#1A1917;opacity:.6;margin-top:.6rem}.onrec-meta a{color:#1A1917;text-decoration:underline}.rev-ov{display:none;position:fixed;inset:0;background:rgba(26,25,23,.55);z-index:9999;overflow:auto}.rev-ov.open{display:block}.rev-box{background:#FAFAF7;max-width:760px;margin:4rem auto;padding:3rem;color:#1A1917;font-size:13px;line-height:1.7}.rev-box h2{font-size:18px;text-transform:uppercase;letter-spacing:.01em;margin:0 0 1rem}.rev-box h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:2rem 0 .5rem}.rev-box h4{font-size:13px;margin:1.25rem 0 .25rem}.rev-box ul{padding-left:1.1rem;margin:.25rem 0}.rev-close{float:right;cursor:pointer;font-size:12px;text-transform:uppercase;letter-spacing:.06em;background:none;border:1px solid #1A1917;padding:.3rem .7rem}.lf-vision{font-size:15px;font-weight:400;line-height:1.6;color:#1A1917;margin-bottom:2.5rem}
 .lf-values{display:flex;flex-direction:column;gap:.5rem}
 .lf-value{padding:.5rem 0}
 .lf-value-name{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#1A1917}
@@ -236,7 +237,7 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
       <p class="verbal-three-why" style="margin-bottom:2rem"><span class="verbal-three-num">03</span>You’re not carrying this alone. We’re here to do the hard work.</p>
       <p class="entry-about-body">This prototype includes one fully populated example frame (Sandpoint, Idaho). All other frames carry functional content, more than ninety documented inputs across all twenty-three locales, describing what assessment produces at the regional, county, and city level.</p>
       <p class="entry-about-body" style="margin-top:1.5rem">Questions?<br><a href="mailto:cody@barnickel.co?subject=Trans-Pecos%20Prototype%20Question" style="color:#000;text-decoration:underline">cody@barnickel.co</a></p>
-      <p class="entry-about-body" style="font-weight:300;margin-top:.5rem">Prepared by <a href="https://barnickel.co" target="_blank" style="color:#000;text-decoration:underline">BARNICKEL.co</a></p>
+      <p class="entry-about-body" style="font-weight:300;margin-top:.5rem">Prepared by <a href="https://barnickel.co" target="_blank" style="color:#000;text-decoration:underline">BARNICKEL.co</a> &middot; <a href="#" onclick="document.getElementById('rev-ov').classList.add('open');return false;" style="color:#000;text-decoration:underline">Revisions</a></p>
       <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #1A1917">
         <div class="entry-tier-label" style="border:none;padding:0;margin-bottom:.75rem">Legend</div>
         <div style="display:flex;flex-wrap:wrap;gap:.35rem 1.5rem;margin-bottom:.5rem">
@@ -248,7 +249,7 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
           <div class="leg-item"><span class="leg-ghost"><svg viewBox="0 0 14 14" width="10" height="10" style="stroke:#1A1917;fill:none;stroke-width:1.2;position:relative;top:-2px"><use href="#ico-edc"/></svg></span>&nbsp;None confirmed</div>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:.35rem 1.5rem">
-          <div class="leg-item"><span class="leg-dot unengaged"></span>&nbsp;Unengaged</div>
+          <div class="leg-item"><span class="leg-dot unengaged"></span>&nbsp;Open</div>
           <div class="leg-item"><span class="leg-dot engaged"></span>&nbsp;Engaged</div>
           <div class="leg-item"><span class="leg-dot assessment"></span>&nbsp;Assessment</div>
           <div class="leg-item"><span class="leg-dot published"></span>&nbsp;Frame Published</div>
@@ -267,7 +268,7 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
               <div><div class="card-name" style="color:#FAFAF7">Trans-Pecos Regional Frame</div>
               <div class="card-type" style="color:rgba(250,250,247,.6)">Texas, USA</div></div></div>
               <div class="card-orgs" style="margin-top:auto;padding-top:.35rem"></div>
-              <div class="card-eng"><span class="eng-dot" style="border-radius:0;background:#C4BFB4"></span><span style="color:rgba(250,250,247,.7)">Unengaged</span></div>
+              <div class="card-eng"><span class="eng-dot" style="border-radius:0;background:#C4BFB4"></span><span style="color:rgba(250,250,247,.7)">Open</span></div>
             </div>
           </div>
         </div>
@@ -275,34 +276,34 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
       <div class="matrix-tier">
         <div class="matrix-tier-label">Core Frames</div>
         <div class="card-grid">
-          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="hudspeth_county"><div class="card-stripe" style="background:#F0D44A"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Hudspeth<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" data-lf="sierra_blanca" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#F0D44A"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Sierra Blanca</div><div class="card-type">Hudspeth County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" data-lf="fort_hancock" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#F0D44A"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Fort Hancock</div><div class="card-type">Hudspeth County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" data-lf="dell_city" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#F0D44A"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Dell City</div><div class="card-type">Hudspeth County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="culberson_county"><div class="card-stripe" style="background:#4A9EE8"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Culberson<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" data-lf="van_horn" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#4A9EE8"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Van Horn</div><div class="card-type">Culberson County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon dark"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="jeffdavis_county"><div class="card-stripe" style="background:#7B6ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Jeff Davis<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="fortdavis"><div class="card-stripe" style="background:#7B6ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Fort Davis</div><div class="card-type">Jeff Davis County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" data-lf="valentine" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#7B6ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Valentine</div><div class="card-type">Jeff Davis County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="presidio_county"><div class="card-stripe" style="background:#D43278"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Presidio<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="marfa"><div class="card-stripe" style="background:#D43278"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Marfa</div><div class="card-type">Presidio County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" data-lf="presidio_city" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#D43278"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Presidio</div><div class="card-type">Presidio County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="brewster_county"><div class="card-stripe" style="background:#4ABD78"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Brewster<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" data-lf="alpine" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#4ABD78"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Alpine</div><div class="card-type">Brewster County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon dark"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" data-lf="marathon" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#4ABD78"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Marathon</div><div class="card-type">Brewster County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
+          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="hudspeth_county"><div class="card-stripe" style="background:#F0D44A"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Hudspeth<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" data-lf="sierra_blanca" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#F0D44A"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Sierra Blanca</div><div class="card-type">Hudspeth County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" data-lf="fort_hancock" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#F0D44A"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Fort Hancock</div><div class="card-type">Hudspeth County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" data-lf="dell_city" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#F0D44A"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Dell City</div><div class="card-type">Hudspeth County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="culberson_county"><div class="card-stripe" style="background:#4A9EE8"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Culberson<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" data-lf="van_horn" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#4A9EE8"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Van Horn</div><div class="card-type">Culberson County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon dark"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="jeffdavis_county"><div class="card-stripe" style="background:#7B6ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Jeff Davis<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="fortdavis"><div class="card-stripe" style="background:#7B6ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Fort Davis</div><div class="card-type">Jeff Davis County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" data-lf="valentine" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#7B6ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Valentine</div><div class="card-type">Jeff Davis County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="presidio_county"><div class="card-stripe" style="background:#D43278"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Presidio<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="marfa"><div class="card-stripe" style="background:#D43278"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Marfa</div><div class="card-type">Presidio County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" data-lf="presidio_city" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#D43278"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Presidio</div><div class="card-type">Presidio County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="brewster_county"><div class="card-stripe" style="background:#4ABD78"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Brewster<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" data-lf="alpine" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#4ABD78"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Alpine</div><div class="card-type">Brewster County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon dark"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" data-lf="marathon" style="border:1px solid #1A1917;cursor:pointer"><div class="card-stripe" style="background:#4ABD78"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Marathon</div><div class="card-type">Brewster County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
         </div>
       </div>
       <div class="matrix-tier">
         <div class="matrix-tier-label">Threshold Frames</div>
         <div class="card-grid">
-          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="reeves_county"><div class="card-stripe" style="background:#E87D52"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Reeves<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="pecos_city"><div class="card-stripe" style="background:#E87D52"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Pecos</div><div class="card-type">Reeves County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="toyah"><div class="card-stripe" style="background:#E87D52"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Toyah</div><div class="card-type">Reeves County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="balmorhea"><div class="card-stripe" style="background:#E87D52"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Balmorhea</div><div class="card-type">Reeves County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="pecos_county"><div class="card-stripe" style="background:#B86ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Pecos<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="fort_stockton"><div class="card-stripe" style="background:#B86ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Fort Stockton</div><div class="card-type">Pecos County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="terrell_county"><div class="card-stripe" style="background:#E85A3C"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Terrell<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
-          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="sanderson"><div class="card-stripe" style="background:#E85A3C"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Sanderson</div><div class="card-type">Terrell County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Unengaged</div></div></div>
+          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="reeves_county"><div class="card-stripe" style="background:#E87D52"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Reeves<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="pecos_city"><div class="card-stripe" style="background:#E87D52"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Pecos</div><div class="card-type">Reeves County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="toyah"><div class="card-stripe" style="background:#E87D52"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Toyah</div><div class="card-type">Reeves County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="balmorhea"><div class="card-stripe" style="background:#E87D52"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Balmorhea</div><div class="card-type">Reeves County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="pecos_county"><div class="card-stripe" style="background:#B86ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Pecos<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="fort_stockton"><div class="card-stripe" style="background:#B86ED4"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name hot" style="color:#ff006e">Fort Stockton</div><div class="card-type">Pecos County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon active"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card county-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="terrell_county"><div class="card-stripe" style="background:#E85A3C"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Terrell<br>County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
+          <div class="frame-card" style="border:1px solid #1A1917;cursor:pointer" data-lf="sanderson"><div class="card-stripe" style="background:#E85A3C"></div><div class="card-body"><div class="card-seal-row"><div class="card-seal placeholder"></div><div><div class="card-name" >Sanderson</div><div class="card-type">Terrell County</div></div></div><div class="card-orgs" style="margin-top:auto;padding-top:.35rem"><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-chamber"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-edc"/></svg></div><div class="org-icon none"><svg viewBox="0 0 14 14"><use href="#ico-dmo"/></svg></div></div><div class="card-eng"><span class="eng-dot unengaged" style="border-radius:0"></span>Open</div></div></div>
         </div>
       </div>
       <div class="matrix-tier">
@@ -353,6 +354,7 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
         <div class="section-header">Character Brief</div>
         <div class="char-inner">
           <div class="field-label">Vision</div>
+          <div id="lf-onrec-vision"></div>
           <p class="lf-vision" id="lf-vision"></p>
           <div class="field-label" style="margin-top:2rem">Values</div>
           <div class="lf-values" id="lf-values"></div>
@@ -416,44 +418,32 @@ var DATA ={
       {
         "year": "1983, 2007",
         "name": "Outdoor Lighting Order",
-        "intent": "Jeff Davis County's outdoor lighting order protects the night sky above McDonald Observatory. The county adopted an order in 1983 and replaced it with the current order, effective December 1, 2007, under Local Government Code Section 240.032. Foundation of the county's dark sky governance identity.",
-        "src": "https://hillcountryalliance.org/uploads/HCA/JDCountyLightingReg.pdf (2007 order citing 1983 order)",
-        "checked": "2026-10-20"
+        "intent": "Jeff Davis County's outdoor lighting order protects the night sky above McDonald Observatory. The county adopted an order in 1983 and replaced it with the current order, effective December 1, 2007, under Local Government Code Section 240.032. Foundation of the county's dark sky governance identity."
       },
       {
         "year": "2021",
         "name": "HB 4305: Dark Sky HOT Proposal (87th Legislature)",
-        "intent": "Proposed authority for Jeff Davis, Brewster and Presidio county governments to use HOT revenue for dark sky infrastructure. Did not become law. Reinvesting tourism revenue in the county's defining asset remains an open question.",
-        "src": "https://capitol.texas.gov/tlodocs/87R/analysis/html/HB04305E.htm ; https://texas.public.law/statutes/tex._tax_code_section_351.10692",
-        "checked": "2026-10-20"
+        "intent": "Proposed authority for Jeff Davis, Brewster and Presidio county governments to use HOT revenue for dark sky infrastructure. Did not become law. Reinvesting tourism revenue in the county's defining asset remains an open question."
       },
       {
         "year": "2022",
         "name": "Greater Big Bend International Dark Sky Reserve Designation",
-        "intent": "Jeff Davis County lies within the reserve. Designated in 2022 by DarkSky International with McDonald Observatory and The Nature Conservancy as partners. The largest International Dark Sky Reserve in the world at designation, covering Jeff Davis, Brewster and Presidio counties, part of Reeves County, and protected lands in Coahuila and Chihuahua. Confirms the county's role at the center of a nationally significant designation.",
-        "src": "https://mcdonaldobservatory.org/2022/04/mcdonald-observatory-partners-create-worlds-largest-international-dark-sky-reserve/",
-        "checked": "2026-10-20"
+        "intent": "Jeff Davis County lies within the reserve. Designated in 2022 by DarkSky International with McDonald Observatory and The Nature Conservancy as partners. The largest International Dark Sky Reserve in the world at designation, covering Jeff Davis, Brewster and Presidio counties, part of Reeves County, and protected lands in Coahuila and Chihuahua. Confirms the county's role at the center of a nationally significant designation."
       },
       {
         "year": "Unknown",
         "name": "Comprehensive Plan",
-        "intent": "No county comprehensive plan confirmed at time of writing. Direct inquiry required. Assessment will establish whether a plan exists, is in draft, or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "No county comprehensive plan confirmed at time of writing. Direct inquiry required. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       },
       {
         "year": "Unknown",
         "name": "Municipal Plans: Fort Davis, Valentine",
-        "intent": "Municipal planning documents for Fort Davis and Valentine not confirmed at time of writing. Assessment will identify what is in active use at the community level within the county.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "Municipal planning documents for Fort Davis and Valentine not confirmed at time of writing. Assessment will identify what is in active use at the community level within the county."
       },
       {
         "year": "2026",
         "name": "Smithsonian “Spark! Places of Innovation,” Local Deployment",
-        "intent": "Fort Davis hosted a Spark! exhibit at Hotel Limpia, July 3 to August 8, 2026, with programming from McDonald Observatory, Fort Davis National Historic Site and the Chihuahuan Desert Research Institute.",
-        "src": "https://www.museumofthebigbend.com/spark/ ; https://www.fortdavis.com/moms",
-        "checked": "2026-10-20"
+        "intent": "Fort Davis hosted a Spark! exhibit at Hotel Limpia, July 3 to August 8, 2026, with programming from McDonald Observatory, Fort Davis National Historic Site and the Chihuahuan Desert Research Institute."
       }
     ],
     "briefs": {
@@ -557,8 +547,7 @@ var DATA ={
     },
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_08.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_08.jpg",
-    "color": "#7B6ED4",
-    "tile_src": "judge: not filled; seat changes Jan 1 (Mills won primary)"
+    "color": "#7B6ED4"
   },
   "marfa": {
     "eyebrow": "City of Marfa, Presidio County, Texas, USA",
@@ -583,86 +572,62 @@ var DATA ={
       {
         "year": "Ongoing",
         "name": "Annual City Budget",
-        "intent": "City of Marfa annual budgets on public record. Establishes the municipal fiscal baseline and active spending priorities. Assessment will map HOT allocations and capital commitments.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "City of Marfa annual budgets on public record. Establishes the municipal fiscal baseline and active spending priorities. Assessment will map HOT allocations and capital commitments."
       },
       {
         "year": "Ongoing",
         "name": "Planning and Zoning Updates",
-        "intent": "P&Z updates on record, including amendments to Ordinance No. 02-04 on commission membership, approved by council July 14, 2026 at five members and two alternates, and proposed zoning ordinance changes heading to a council public hearing in November 2026. Assessment will identify what other land use decisions are active, what is pending, and what standards are currently enforced.",
-        "src": "https://www.cityofmarfa.com/media/7356 ; https://bigbendsentinel.com/2026/07/16/council-talks-planning-zoning-changes-water-meters-and-the-ems-medical-director/ (secondary) ; Marfa council agenda Oct 13, 2026 item 10B",
-        "checked": "2026-10-20"
+        "intent": "P&Z updates on record, including amendments to Ordinance No. 02-04 on commission membership, approved by council July 14, 2026 at five members and two alternates, and proposed zoning ordinance changes heading to a council public hearing in November 2026. Assessment will identify what other land use decisions are active, what is pending, and what standards are currently enforced."
       },
       {
         "year": "2024–26",
         "name": "HOT Use: Senate Interim Hearings",
-        "intent": "Marfa officials, including Mayor Manny Baeza, testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027.",
-        "src": "https://bigbendsentinel.com/2024/06/19/city-officials-advocate-for-hot-use-expansion-at-texas-capitol/ (secondary) ; https://capitol.texas.gov/tlodocs/89R/analysis/pdf/SB00913I.pdf ; https://capitol.texas.gov/tlodocs/89R/schedules/html/C5252026092209001.HTM",
-        "checked": "2026-10-20"
+        "intent": "Marfa officials, including Mayor Manny Baeza, testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027."
       },
       {
         "year": "Ongoing",
         "name": "Short-Term Rental Market Conditions",
-        "intent": "Short-term rental growth is a documented pressure in a city of about 1,700 people. Assessment will establish current supply figures. A condition the Experience and Economy Briefs will need to address directly.",
-        "src": "unverified: no current STR supply source",
-        "checked": "2026-10-20"
+        "intent": "Short-term rental growth is a documented pressure in a city of about 1,700 people. Assessment will establish current supply figures. A condition the Experience and Economy Briefs will need to address directly."
       },
       {
         "year": "2017",
         "name": "Comprehensive Plan",
-        "intent": "Marfa's most recent comprehensive plan was completed in 2017, with an update anticipated. Assessment will map where the 2017 plan still governs and what the update needs to carry.",
-        "src": "https://bigbendsentinel.com/2026/07/16/council-talks-planning-zoning-changes-water-meters-and-the-ems-medical-director/ (secondary)",
-        "checked": "2026-10-20"
+        "intent": "Marfa's most recent comprehensive plan was completed in 2017, with an update anticipated. Assessment will map where the 2017 plan still governs and what the update needs to carry."
       },
       {
         "year": "Ongoing",
         "name": "Chinati Foundation Institutional Plans",
-        "intent": "Chinati Foundation is the primary anchor of Marfa’s arts and cultural economy. Its institutional direction (programming, campus, public access) is a material input to the Experience and Economy Briefs. Direct engagement with the Foundation is part of the assessment.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "Chinati Foundation is the primary anchor of Marfa’s arts and cultural economy. Its institutional direction (programming, campus, public access) is a material input to the Experience and Economy Briefs. Direct engagement with the Foundation is part of the assessment."
       },
       {
         "year": "2026",
         "name": "Water Tower Lease",
-        "intent": "Council tabled competing lease offers from 307 Digital and MD7 in June 2026 and took no action on an MD7 letter of intent on August 11, 2026. Assessment will confirm current status.",
-        "src": "https://www.cityofmarfa.com/media/7381 ; https://www.cityofmarfa.com/media/7426",
-        "checked": "2026-10-20"
+        "intent": "Council tabled competing lease offers from 307 Digital and MD7 in June 2026 and took no action on an MD7 letter of intent on August 11, 2026. Assessment will confirm current status."
       },
       {
         "year": "2026",
         "name": "TWDB Funding Eligibility: Water Infrastructure",
-        "intent": "Under the interlocal agreement with Presidio County, the county owns the Fort D.A. Russell and East Heights water infrastructure, which shapes how Marfa applies for TWDB funding. The July 14, 2026 council agenda carries the eligibility question.",
-        "src": "https://www.cityofmarfa.com/media/7366 ; https://www.cityofmarfa.com/media/7341",
-        "checked": "2026-10-20"
+        "intent": "Under the interlocal agreement with Presidio County, the county owns the Fort D.A. Russell and East Heights water infrastructure, which shapes how Marfa applies for TWDB funding. The July 14, 2026 council agenda carries the eligibility question."
       },
       {
         "year": "Ongoing",
         "name": "Trost Trail, Local Deployment",
-        "intent": "The Hotel Paisano is a Trost & Trost design on the regional Trost Trail.",
-        "src": "https://authentictexas.com/the-hotels-that-trost-built/ (secondary) ; https://texastimetravel.com/regions/mountain-trail/trost-trail/",
-        "checked": "2026-10-20"
+        "intent": "The Hotel Paisano is a Trost & Trost design on the regional Trost Trail."
       },
       {
         "year": "2021",
         "name": "Dark Skies Ordinance No. 2021-09",
-        "intent": "Marfa's outdoor lighting ordinance. In September 2026, council granted a temporary, conditioned exemption for an Art Blocks projection after review with McDonald Observatory, the ordinance operating as a working standard.",
-        "src": "Marfa council minutes Sep 8, 2026 (signed)",
-        "checked": "2026-10-20"
+        "intent": "Marfa's outdoor lighting ordinance. In September 2026, council granted a temporary, conditioned exemption for an Art Blocks projection after review with McDonald Observatory, the ordinance operating as a working standard."
       },
       {
         "year": "2026",
         "name": "Marfa Municipal Airport Improvements",
-        "intent": "Presidio County reports a completed $4.2 million airport project and approval for about $29 million in further improvements, with city HOT funds serving as the local grant match.",
-        "src": "Marfa council minutes Aug 27, 2026 (signed)",
-        "checked": "2026-10-20"
+        "intent": "Presidio County reports a completed $4.2 million airport project and approval for about $29 million in further improvements, with city HOT funds serving as the local grant match."
       },
       {
         "year": "2026",
         "name": "Texas CDBG Application",
-        "intent": "Council authorized procurement in fall 2026 for administrative services on a Texas Community Development Block Grant application, with a maximum award of $750,000.",
-        "src": "Marfa council minutes Sep 8, 2026 (signed) ; agenda Oct 13, 2026 item 14",
-        "checked": "2026-10-20"
+        "intent": "Council authorized procurement in fall 2026 for administrative services on a Texas Community Development Block Grant application, with a maximum award of $750,000."
       }
     ],
     "briefs": {
@@ -766,8 +731,7 @@ var DATA ={
     },
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_12.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_12.jpg",
-    "color": "#D43278",
-    "tile_src": "mayor: cityofmarfa.com/node/2357 ; DMO: cityofmarfa.com/directory ; HOT: Big Bend Sentinel 2024-06-19 (secondary) ; elev: unverified"
+    "color": "#D43278"
   },
   "fortdavis": {
     "eyebrow": "Fort Davis, Jeff Davis County, Texas, USA",
@@ -792,30 +756,22 @@ var DATA ={
       {
         "year": "1983, 2007",
         "name": "Outdoor Lighting Order (County)",
-        "intent": "Jeff Davis County's outdoor lighting order, first adopted in 1983 and replaced in 2007, protects the night sky above McDonald Observatory. Fort Davis sits at the center of this governance legacy. Assessment will document how the order shapes development standards at the community level.",
-        "src": "https://hillcountryalliance.org/uploads/HCA/JDCountyLightingReg.pdf (2007 order citing 1983 order)",
-        "checked": "2026-10-20"
+        "intent": "Jeff Davis County's outdoor lighting order, first adopted in 1983 and replaced in 2007, protects the night sky above McDonald Observatory. Fort Davis sits at the center of this governance legacy. Assessment will document how the order shapes development standards at the community level."
       },
       {
         "year": "2022",
         "name": "Greater Big Bend International Dark Sky Reserve Designation",
-        "intent": "Fort Davis sits at the center of the largest International Dark Sky Reserve in the world at its 2022 designation. Assessment will identify how the designation is currently leveraged and what gaps exist between the designation and community-level planning.",
-        "src": "https://mcdonaldobservatory.org/2022/04/mcdonald-observatory-partners-create-worlds-largest-international-dark-sky-reserve/",
-        "checked": "2026-10-20"
+        "intent": "Fort Davis sits at the center of the largest International Dark Sky Reserve in the world at its 2022 designation. Assessment will identify how the designation is currently leveraged and what gaps exist between the designation and community-level planning."
       },
       {
         "year": "Unknown",
         "name": "Comprehensive Plan",
-        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       },
       {
         "year": "2026",
         "name": "Smithsonian “Spark! Places of Innovation,” Local Deployment",
-        "intent": "Fort Davis hosted a Spark! exhibit at Hotel Limpia, July 3 to August 8, 2026, with programming from McDonald Observatory, Fort Davis National Historic Site and the Chihuahuan Desert Research Institute.",
-        "src": "https://www.museumofthebigbend.com/spark/ ; https://www.fortdavis.com/moms",
-        "checked": "2026-10-20"
+        "intent": "Fort Davis hosted a Spark! exhibit at Hotel Limpia, July 3 to August 8, 2026, with programming from McDonald Observatory, Fort Davis National Historic Site and the Chihuahuan Desert Research Institute."
       }
     ],
     "briefs": {
@@ -919,8 +875,7 @@ var DATA ={
     },
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_09.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_09.jpg",
-    "color": "#7B6ED4",
-    "tile_src": "unincorporated community"
+    "color": "#7B6ED4"
   },
   "sandpoint": {
     "eyebrow": "City of Sandpoint, Bonner County, Idaho, USA",
@@ -1338,32 +1293,24 @@ var DATA ={
     "narrative": "Culberson County in observation. Present tense. The landscape, the history, the economy, the civic character as it actually exists. Not promoted. Not sentimentalized. The narrative anchors the Frame in what is already true about this county before any directives are set. Drafted from the assessment. Refined with community input before publication.",
     "planInputs": [
       {
-        "year": "Unknown",
-        "name": "Comprehensive Plan",
-        "intent": "City and county planning documents unknown at time of writing. Direct inquiry required. Assessment will establish what is in active use.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "year": "2020-2030",
+        "name": "Culberson County Comprehensive Plan 2020-2030",
+        "intent": "Prepared by Kleinman Consultants with the county under a state planning grant, with a vision statement, chapter goals and a 2019 public engagement record. Adoption is not on record. Assessment will establish where the plan still guides decisions and what has changed since it was written."
       },
       {
         "year": "Unknown",
         "name": "Municipal Seal and Identity System",
-        "intent": "Municipal and county seals on record. Identity system and design guidelines unknown. Assessment will document what exists and identify gaps.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "Municipal and county seals on record. Identity system and design guidelines unknown. Assessment will document what exists and identify gaps."
       },
       {
         "year": "Ongoing",
         "name": "Blue Origin Launch Site One Presence",
-        "intent": "Blue Origin's Launch Site One has flown from Culberson County since 2006, about 30 miles north of Van Horn. Local views on its economic return vary, from payroll impact to expectations of a larger boom. Assessment will map the current relationship and identify what the community wants from it.",
-        "src": "https://www.faa.gov/about/office_org/headquarters_offices/ast/media/20060829_Blue_Origin_EA_Signed.pdf ; https://www.elpasoinc.com/news/local_news/space-tourism-stalls/article_6c200beb-128b-43e0-a919-854c3521e696.html (secondary)",
-        "checked": "2026-10-20"
+        "intent": "Blue Origin's Launch Site One has flown from Culberson County since 2006, about 30 miles north of Van Horn. Local views on its economic return vary, from payroll impact to expectations of a larger boom. Assessment will map the current relationship and identify what the community wants from it."
       },
       {
         "year": "Jul–Aug 2026",
         "name": "Desert Hill Solar, LLC Tax Abatement Application",
-        "intent": "On the Commissioners Court agendas of July 13 and August 10, 2026: a Chapter 312 tax abatement application from Desert Hill Solar, LLC.",
-        "src": "https://www.co.culberson.tx.us/upload/page/0102/2026/AGENDA%207-13-26.pdf ; https://www.co.culberson.tx.us/upload/page/0102/2026/AGENDA%208-10-26.pdf",
-        "checked": "2026-10-20"
+        "intent": "On the Commissioners Court agendas of July 13 and August 10, 2026: a Chapter 312 tax abatement application from Desert Hill Solar, LLC."
       }
     ],
     "briefs": {
@@ -1468,7 +1415,18 @@ var DATA ={
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_06.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_06.jpg",
     "color": "#4A9EE8",
-    "tile_src": "pop: Census QuickFacts V2025 ; elev: TSHA Handbook ; judge: state-hosted county page (undated) ; HOT: not located"
+    "onRecord": {
+      "vision": [
+        {
+          "q": "Culberson County supports a high quality of life by nurturing a family-friendly, resilient, and safe community, and welcomes sustainable growth while conserving natural assets.",
+          "status": "Plan completed; adoption not on record",
+          "source": "Culberson County Comprehensive Plan 2020-2030, p. 15",
+          "by": "Kleinman Consultants with Culberson County",
+          "date": "December 2019",
+          "url": "https://newtools.cira.state.tx.us/upload/page/1537/docs/News/CULBERSON%20%20COUNTY%20PLAN1a%20Small.pdf"
+        }
+      ]
+    }
   },
   "presidio_county": {
     "eyebrow": "Presidio County, Texas, USA",
@@ -1493,65 +1451,47 @@ var DATA ={
       {
         "year": "Ongoing",
         "name": "Annual City Budgets: Marfa, Presidio",
-        "intent": "Annual budgets on public record for both principal cities. Establishes fiscal baselines and active spending priorities for each municipality within the county.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "Annual budgets on public record for both principal cities. Establishes fiscal baselines and active spending priorities for each municipality within the county."
       },
       {
         "year": "Ongoing",
         "name": "Planning and Zoning: Marfa",
-        "intent": "P&Z updates on record for Marfa, including amendments to Ordinance No. 02-04 on commission membership, approved by council July 14, 2026. Assessment will identify what other land use decisions are active and what standards are currently enforced.",
-        "src": "https://www.cityofmarfa.com/media/7356 ; https://bigbendsentinel.com/2026/07/16/council-talks-planning-zoning-changes-water-meters-and-the-ems-medical-director/ (secondary) ; Marfa council agenda Oct 13, 2026 item 10B",
-        "checked": "2026-10-20"
+        "intent": "P&Z updates on record for Marfa, including amendments to Ordinance No. 02-04 on commission membership, approved by council July 14, 2026. Assessment will identify what other land use decisions are active and what standards are currently enforced."
       },
       {
         "year": "2024–26",
         "name": "HOT Use: Senate Interim Hearings",
-        "intent": "Marfa officials, including Mayor Manny Baeza, testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027.",
-        "src": "https://bigbendsentinel.com/2024/06/19/city-officials-advocate-for-hot-use-expansion-at-texas-capitol/ (secondary) ; https://capitol.texas.gov/tlodocs/89R/analysis/pdf/SB00913I.pdf ; https://capitol.texas.gov/tlodocs/89R/schedules/html/C5252026092209001.HTM",
-        "checked": "2026-10-20"
+        "intent": "Marfa officials, including Mayor Manny Baeza, testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027."
       },
       {
         "year": "Unknown",
         "name": "Presidio City Planning Documents",
-        "intent": "City of Presidio and Presidio Municipal Development District planning documents. Assessment will identify what is in active use.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "City of Presidio and Presidio Municipal Development District planning documents. Assessment will identify what is in active use."
       },
       {
         "year": "Unknown",
         "name": "County Comprehensive Plan",
-        "intent": "No Presidio County comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "No Presidio County comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists or represents a gap."
       },
       {
         "year": "2024",
         "name": "UT Bureau of Economic Geology Geothermal Assessment",
-        "intent": "Completed in May 2024 for the Presidio Municipal Development District, assessing geothermal resources in Presidio County.",
-        "src": "https://newtools.cira.state.tx.us/upload/page/4648/2024/presidio_county_geothermal_assessment_final_v2.pdf",
-        "checked": "2026-10-20"
+        "intent": "Completed in May 2024 for the Presidio Municipal Development District, assessing geothermal resources in Presidio County."
       },
       {
         "year": "2025–26",
         "name": "Open Origin Data Center Proposal",
-        "intent": "Reported in 2025 as an approximately 80,000-acre campus southeast of Marfa, with groundwater use cited by a county official at about 800 acre-feet a year, compared with Marfa's roughly 550. No county agenda item to date.",
-        "src": "https://bigbendsentinel.com/2025/10/01/proposed-marfa-data-center-still-in-discussions/ (secondary)",
-        "checked": "2026-10-20"
+        "intent": "Reported in 2025 as an approximately 80,000-acre campus southeast of Marfa, with groundwater use cited by a county official at about 800 acre-feet a year, compared with Marfa's roughly 550. No county agenda item to date."
       },
       {
         "year": "2023",
         "name": "Presidio County Water Infrastructure (TWDB EDAP)",
-        "intent": "In 2023, TWDB approved about $4 million through its Economically Distressed Areas Program for design and construction of Marfa's Fort D.A. Russell and East Heights systems, and for planning and design in Las Pampas and Shafter. The effort grew from a 2022 multi-community committee including the Presidio County Underground Water Conservation District.",
-        "src": "https://www.senate.texas.gov/members/d29/press/en/p20230606a.pdf",
-        "checked": "2026-10-20"
+        "intent": "In 2023, TWDB approved about $4 million through its Economically Distressed Areas Program for design and construction of Marfa's Fort D.A. Russell and East Heights systems, and for planning and design in Las Pampas and Shafter. The effort grew from a 2022 multi-community committee including the Presidio County Underground Water Conservation District."
       },
       {
         "year": "2026",
         "name": "TWDB HB 500 Funding Application",
-        "intent": "The July 8, 2026 Commissioners Court agenda includes an application to TWDB for HB 500 funding.",
-        "src": "Presidio County Commissioners Court agenda Jul 8, 2026",
-        "checked": "2026-10-20"
+        "intent": "The July 8, 2026 Commissioners Court agenda includes an application to TWDB for HB 500 funding."
       }
     ],
     "briefs": {
@@ -1655,8 +1595,7 @@ var DATA ={
     },
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_11.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_11.jpg",
-    "color": "#D43278",
-    "tile_src": "pop: Census QuickFacts V2025 ; judge: Commissioners Court agenda Jul 8, 2026 ; HOT authority: HB 3043 (75R)"
+    "color": "#D43278"
   },
   "brewster_county": {
     "eyebrow": "Brewster County, Texas, USA",
@@ -1681,44 +1620,32 @@ var DATA ={
       {
         "year": "2016",
         "name": "Alpine Vision Plan",
-        "intent": "\"Alpine, Texas: A Vision for the Future,\" prepared in August 2016 by UTSA's Center for Urban and Regional Planning Research, covering downtown Alpine with citywide and regional data. Available on the City of Alpine website. Assessment will determine its current standing.",
-        "src": "https://cityofalpine.com/Alpine-A-Vision-for-the-Future-2016-sm.pdf",
-        "checked": "2026-10-20"
+        "intent": "\"Alpine, Texas: A Vision for the Future,\" prepared in August 2016 by UTSA's Center for Urban and Regional Planning Research, covering downtown Alpine with citywide and regional data. Available on the City of Alpine website. Assessment will determine its current standing."
       },
       {
         "year": "2022",
         "name": "Strategic Plan Initiated: Alpine",
-        "intent": "Strategic planning process launched in 2022, with community town halls from October to December. Adoption status unconfirmed. Assessment will determine current status and active commitments.",
-        "src": "https://bigbendsentinel.com/2022/11/30/city-of-alpine-kicks-off-strategic-planning-process-with-town-halls/ (secondary)",
-        "checked": "2026-10-20"
+        "intent": "Strategic planning process launched in 2022, with community town halls from October to December. Adoption status unconfirmed. Assessment will determine current status and active commitments."
       },
       {
         "year": "2022",
         "name": "HOT Governance on Record: Brewster County",
-        "intent": "Commissioner Sara Allen Colando publicly questioned marketing-focused HOT spending in 2022. Establishes county-level awareness of the HOT governance question ahead of the regional legislative argument. Assessment will map current HOT deployment and stated priorities.",
-        "src": "https://texasstandard.org/stories/big-bend-national-park-terlingua-texas-tourism-hotel-occupancy-taxes/ (secondary)",
-        "checked": "2026-10-20"
+        "intent": "Commissioner Sara Allen Colando publicly questioned marketing-focused HOT spending in 2022. Establishes county-level awareness of the HOT governance question ahead of the regional legislative argument. Assessment will map current HOT deployment and stated priorities."
       },
       {
         "year": "Unknown",
         "name": "Marathon Planning Documents",
-        "intent": "Marathon planning and chamber documents unknown at time of writing. Assessment will identify what exists at the community level.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "Marathon planning and chamber documents unknown at time of writing. Assessment will identify what exists at the community level."
       },
       {
         "year": "Unknown",
         "name": "County Comprehensive Plan",
-        "intent": "No Brewster County comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "No Brewster County comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists or represents a gap."
       },
       {
         "year": "Nov 2026",
         "name": "ESD #2 on the November Ballot",
-        "intent": "Commissioners Court held the petition hearing at its June 30, 2026 special meeting. The Order of Election places formation of Emergency Services District #2 on the November 3, 2026 ballot.",
-        "src": "https://www.brewstercounty.gov/upload/page/0088/Order%20of%20Election%20Nov%20Gen%202026.pdf ; https://www.brewstercounty.gov/upload/page/0075/063026%20Brewster%20County%20Special%20Commissioners%20Court%20Meeting%20Agenda%20%20June%2030%202026.pdf. UPDATE after Nov 3 election",
-        "checked": "2026-10-20"
+        "intent": "Commissioners Court held the petition hearing at its June 30, 2026 special meeting. The Order of Election places formation of Emergency Services District #2 on the November 3, 2026 ballot."
       }
     ],
     "briefs": {
@@ -1822,8 +1749,7 @@ var DATA ={
     },
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_14.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_14.jpg",
-    "color": "#4ABD78",
-    "tile_src": "pop: Census QuickFacts V2025 ; elev: TSHA Handbook ; judge: Nov 2026 Order of Election ; DMO: brewstercounty.gov tourism agendas"
+    "color": "#4ABD78"
   },
   "van_horn": {
     "eyebrow": "City of Van Horn, Culberson County, Texas, USA",
@@ -1848,30 +1774,22 @@ var DATA ={
       {
         "year": "Ongoing",
         "name": "Blue Origin Launch Site One Proximity",
-        "intent": "Van Horn serves as the primary service community for Blue Origin's Launch Site One, flying since 2006 about 30 miles north of town. Local views on its economic return vary. Assessment will establish what exists, what has been attempted, and what the community wants from this relationship going forward.",
-        "src": "https://www.faa.gov/about/office_org/headquarters_offices/ast/media/20060829_Blue_Origin_EA_Signed.pdf ; https://www.elpasoinc.com/news/local_news/space-tourism-stalls/article_6c200beb-128b-43e0-a919-854c3521e696.html (secondary)",
-        "checked": "2026-10-20"
+        "intent": "Van Horn serves as the primary service community for Blue Origin's Launch Site One, flying since 2006 about 30 miles north of town. Local views on its economic return vary. Assessment will establish what exists, what has been attempted, and what the community wants from this relationship going forward."
       },
       {
         "year": "Unknown",
         "name": "Chamber Status",
-        "intent": "No current public activity found for the Van Horn Chamber of Commerce. Assessment will determine current status and whether a successor civic organization is active.",
-        "src": "unverified: no chamber record found",
-        "checked": "2026-10-20"
+        "intent": "No current public activity found for the Van Horn Chamber of Commerce. Assessment will determine current status and whether a successor civic organization is active."
       },
       {
         "year": "Unknown",
         "name": "Comprehensive Plan",
-        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "The Culberson County Comprehensive Plan 2020-2030 covers Van Horn as the county seat and its only incorporated town. A separate town plan is not confirmed. Assessment will establish which plan guides town decisions."
       },
       {
         "year": "Ongoing",
         "name": "Trost Trail, Local Deployment",
-        "intent": "Hotel El Capitan is a Trost & Trost design on the regional Trost Trail.",
-        "src": "https://authentictexas.com/the-hotels-that-trost-built/ (secondary) ; https://texastimetravel.com/regions/mountain-trail/trost-trail/",
-        "checked": "2026-10-20"
+        "intent": "Hotel El Capitan is a Trost & Trost design on the regional Trost Trail."
       }
     ],
     "briefs": {
@@ -1976,7 +1894,19 @@ var DATA ={
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_07.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_07.jpg",
     "color": "#4A9EE8",
-    "tile_src": "pop: 2020 Census ; HOT: data.texas.gov vmy5-jctb FY2020 ; chamber: no record found ; elev: unverified"
+    "onRecord": {
+      "vision": [
+        {
+          "label": "Purpose on record",
+          "q": "The Van Horn EDC was established in 1995 as a 4B Economic Development Corporation to pursue projects and initiatives that promote economic development within the Town of Van Horn. The Van Horn Economic Development Corporation is committed to improving the quality of life in Van Horn, encouraging regional business expansion, and introducing tourists to the vast beauty of Far West Texas.",
+          "status": "Website statement",
+          "source": "Economic Development Corporation page",
+          "by": "Van Horn Economic Development Corporation",
+          "date": "Undated",
+          "url": "https://vanhorntexas.org/2170/Economic-Development-Corporation"
+        }
+      ]
+    }
   },
   "valentine": {
     "eyebrow": "Valentine, Jeff Davis County, Texas, USA",
@@ -2130,30 +2060,22 @@ var DATA ={
       {
         "year": "Ongoing",
         "name": "International Bridge of the Americas Operations",
-        "intent": "Presidio hosts an active international port of entry. PMDD, Presidio County and NADBank discussed a bridge ownership feasibility study in February 2025. Border crossing volume and commercial traffic are material inputs to the Economy and Experience Briefs. Assessment will map current activity and identify community priorities around the crossing.",
-        "src": "https://bigbendsentinel.com/2025/02/26/pmdd-hosts-international-bridge-study-and-planning-discussions/ (secondary)",
-        "checked": "2026-10-20"
+        "intent": "Presidio hosts an active international port of entry. PMDD, Presidio County and NADBank discussed a bridge ownership feasibility study in February 2025. Border crossing volume and commercial traffic are material inputs to the Economy and Experience Briefs. Assessment will map current activity and identify community priorities around the crossing."
       },
       {
         "year": "Unknown",
         "name": "Ojinaga Sister City Relationship",
-        "intent": "Presidio and Ojinaga, Chihuahua maintain a functional cross-border relationship. Its full nature and formality is an assessment input for the Engagement Brief.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "Presidio and Ojinaga, Chihuahua maintain a functional cross-border relationship. Its full nature and formality is an assessment input for the Engagement Brief."
       },
       {
         "year": "Unknown",
         "name": "Comprehensive Plan",
-        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       },
       {
         "year": "June 2026",
         "name": "Lead Capital / Maachi Data Center Proposal",
-        "intent": "Presented to the Presidio Municipal Development District on June 3, 2026: a request for 200 to 250 hectares for a 100-megawatt data center with on-site gas generation. Not formally submitted.",
-        "src": "https://bigbendsentinel.com/2026/06/10/data-center-investors-seek-large-portions-of-land-in-presidio/ (secondary)",
-        "checked": "2026-10-20"
+        "intent": "Presented to the Presidio Municipal Development District on June 3, 2026: a request for 200 to 250 hectares for a 100-megawatt data center with on-site gas generation. Not formally submitted."
       }
     ],
     "briefs": {
@@ -2258,7 +2180,18 @@ var DATA ={
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_13.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_13.jpg",
     "color": "#D43278",
-    "tile_src": "pop: 2020 Census ; mayor: presidiotx.us/?page_id=34 (undated) ; CVB: Big Bend Sentinel 2025-07-02 (secondary) ; elev: unverified"
+    "onRecord": {
+      "vision": [
+        {
+          "q": "By 2035, Presidio will be a thriving, resilient border community that celebrates its rich binational heritage while embracing innovative economic opportunities. As a well-grounded gateway to adventure and commerce, Presidio will leverage its unique location, natural resources, and cultural assets to become a model for sustainable, inclusive rural development in the 21st century. Through community-driven initiatives and adaptive strategies, Presidio will offer a high quality of life for all residents, foster a culture of innovation, and serve as a vital link in the North American economy.",
+          "status": "Commissioned study; adoption not on record",
+          "source": "Presidio, TX Economic Development & Community Resiliency Strategy, p. 18",
+          "by": "John T. Kennedy for the City of Presidio and PMDD",
+          "date": "Fall 2024",
+          "url": "https://presidiotx.us/wp-content/uploads/2025/03/PresidioTX-REDCommunity-Resiliency-Strategy-2024.pdf"
+        }
+      ]
+    }
   },
   "alpine": {
     "eyebrow": "City of Alpine, Brewster County, Texas, USA",
@@ -2283,58 +2216,42 @@ var DATA ={
       {
         "year": "2016",
         "name": "Alpine Vision Plan",
-        "intent": "\"Alpine, Texas: A Vision for the Future,\" prepared in August 2016 by UTSA's Center for Urban and Regional Planning Research, covering downtown Alpine with citywide and regional data. Available on the City of Alpine website. Assessment will determine its current standing.",
-        "src": "https://cityofalpine.com/Alpine-A-Vision-for-the-Future-2016-sm.pdf",
-        "checked": "2026-10-20"
+        "intent": "\"Alpine, Texas: A Vision for the Future,\" prepared in August 2016 by UTSA's Center for Urban and Regional Planning Research, covering downtown Alpine with citywide and regional data. Available on the City of Alpine website. Assessment will determine its current standing."
       },
       {
         "year": "2022",
         "name": "Strategic Plan Initiated",
-        "intent": "Strategic planning process launched in 2022, with community town halls from October to December. Adoption status unconfirmed. Assessment will determine current status and active commitments.",
-        "src": "https://bigbendsentinel.com/2022/11/30/city-of-alpine-kicks-off-strategic-planning-process-with-town-halls/ (secondary)",
-        "checked": "2026-10-20"
+        "intent": "Strategic planning process launched in 2022, with community town halls from October to December. Adoption status unconfirmed. Assessment will determine current status and active commitments."
       },
       {
         "year": "Ongoing",
         "name": "Sul Ross State University Presence",
-        "intent": "Sul Ross State University anchors Alpine’s civic and economic identity. Institutional planning documents and enrollment trends are inputs to the Economy and Engagement Briefs. Assessment will establish the current relationship between the university and the community’s planning direction.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "Sul Ross State University anchors Alpine’s civic and economic identity. Institutional planning documents and enrollment trends are inputs to the Economy and Engagement Briefs. Assessment will establish the current relationship between the university and the community’s planning direction."
       },
       {
         "year": "Unknown",
         "name": "Comprehensive Plan",
-        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       },
       {
         "year": "2026",
         "name": "Smithsonian “Spark! Places of Innovation,” Local Deployment",
-        "intent": "The Museum of the Big Bend hosted the exhibition July 3 to August 8, 2026, through the Texas Heritage Trails Program, coordinated statewide by the Texas Historical Commission.",
-        "src": "https://www.museumofthebigbend.com/spark/ ; https://www.fortdavis.com/moms",
-        "checked": "2026-10-20"
+        "intent": "The Museum of the Big Bend hosted the exhibition July 3 to August 8, 2026, through the Texas Heritage Trails Program, coordinated statewide by the Texas Historical Commission."
       },
       {
         "year": "July 2026",
         "name": "TXD Regional Roundtable",
-        "intent": "Texas Downtown Association regional roundtable scheduled in Alpine for July 9 and 10, 2026, for downtown professionals and preservation leaders, including a Texas Historical Commission session on the Certified Local Government program.",
-        "src": "https://bigbendsentinel.com/2026/06/30/summer-is-calling-and-so-is-the-alpine-regional-roundtable/ (secondary, preview only)",
-        "checked": "2026-10-20"
+        "intent": "Texas Downtown Association regional roundtable scheduled in Alpine for July 9 and 10, 2026, for downtown professionals and preservation leaders, including a Texas Historical Commission session on the Certified Local Government program."
       },
       {
         "year": "Ongoing",
         "name": "Trost Trail, Local Deployment",
-        "intent": "The Holland Hotel is a Trost & Trost design on the regional Trost Trail.",
-        "src": "https://authentictexas.com/the-hotels-that-trost-built/ (secondary) ; https://texastimetravel.com/regions/mountain-trail/trost-trail/",
-        "checked": "2026-10-20"
+        "intent": "The Holland Hotel is a Trost & Trost design on the regional Trost Trail."
       },
       {
         "year": "Feb 2026",
         "name": "Water in the Desert 2026, Local Deployment",
-        "intent": "Hosted at Sul Ross State University in February 2026, with more than 350 attendees, including landowners, scientists, groundwater conservation district leaders, legislators and judges.",
-        "src": "https://meadowsresearchinstitute.sulross.edu/?p=538",
-        "checked": "2026-10-20"
+        "intent": "Hosted at Sul Ross State University in February 2026, with more than 350 attendees, including landowners, scientists, groundwater conservation district leaders, legislators and judges."
       }
     ],
     "briefs": {
@@ -2438,8 +2355,7 @@ var DATA ={
     },
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_15.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_15.jpg",
-    "color": "#4ABD78",
-    "tile_src": "pop: Census QuickFacts V2025 ; elev: unverified ; DMO: city directory, visitalpinetx.com ; chamber: alpinetexas.com (no dated activity)"
+    "color": "#4ABD78"
   },
   "marathon": {
     "eyebrow": "Marathon, Brewster County, Texas, USA",
@@ -2990,23 +2906,17 @@ var DATA ={
       {
         "year": "Ongoing",
         "name": "Annual City Budget",
-        "intent": "City of Pecos annual budgets on public record. Establishes the municipal fiscal baseline and active spending priorities. Assessment will map HOT allocations and capital commitments.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "City of Pecos annual budgets on public record. Establishes the municipal fiscal baseline and active spending priorities. Assessment will map HOT allocations and capital commitments."
       },
       {
         "year": "Ongoing",
         "name": "Reeves County Energy Sector Presence",
-        "intent": "Reeves County is among the most active oil and gas producing counties in the Permian Basin. Energy sector employment, workforce housing demand, and infrastructure pressure are inputs to the Economy and Environment Briefs. Assessment will document current conditions and community priorities.",
-        "src": "https://www.rrc.texas.gov/news/texas-oil-and-gas-production-statistics-for-december-2025/",
-        "checked": "2026-10-20"
+        "intent": "Reeves County is among the most active oil and gas producing counties in the Permian Basin. Energy sector employment, workforce housing demand, and infrastructure pressure are inputs to the Economy and Environment Briefs. Assessment will document current conditions and community priorities."
       },
       {
-        "year": "Unknown",
-        "name": "Comprehensive Plan",
-        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "year": "2020-2030",
+        "name": "Town of Pecos City 2020-2030 Comprehensive Plan",
+        "intent": "Prepared by GrantWorks, Inc. under a Texas CDBG planning grant and presented to council for acceptance on August 27, 2020. The Town also publishes a 2030 Strategic Plan with eight goals. Assessment will establish where both still guide decisions."
       }
     ],
     "briefs": {
@@ -3111,7 +3021,18 @@ var DATA ={
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_18.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_18.jpg",
     "color": "#E87D52",
-    "tile_src": "pop: Census QuickFacts (2020) ; mayor: pecostx.gov/165/City-Council ; EDC: pecosedc.com"
+    "onRecord": {
+      "vision": [
+        {
+          "q": "The Pecos 4B Economic Development Corporation envisions Pecos, Texas, as the premier rural economic hub in West Texas, leveraging its strategic location, abundant energy resources, transportation networks, and business-friendly environment to create a prosperous and resilient economy for generations to come.",
+          "status": "Website statement",
+          "source": "About PEDC",
+          "by": "Pecos 4B Economic Development Corporation",
+          "date": "Undated",
+          "url": "https://pecosedc.com/about-pedc/"
+        }
+      ]
+    }
   },
   "toyah": {
     "eyebrow": "Toyah, Reeves County, Texas, USA",
@@ -3265,16 +3186,12 @@ var DATA ={
       {
         "year": "Ongoing",
         "name": "Balmorhea State Park Anchor",
-        "intent": "Balmorhea State Park, managed by TPWD and anchored by the San Solomon Springs pool, operates under a daily visitor capacity. TPWD reported about 163,000 visitors in 2017, more than double the 2008 figure. The park's visitation patterns and TPWD management direction are inputs to the Experience and Economy Briefs. Assessment will establish the current relationship between the park and the community's planning direction.",
-        "src": "https://tpwd.texas.gov/state-parks/balmorhea ; https://texasstandard.org/stories/balmorhea-state-park-works-to-preserve-resources-amid-growing-popularity/ (secondary, 2017 figure)",
-        "checked": "2026-10-20"
+        "intent": "Balmorhea State Park, managed by TPWD and anchored by the San Solomon Springs pool, operates under a daily visitor capacity. TPWD reported about 163,000 visitors in 2017, more than double the 2008 figure. The park's visitation patterns and TPWD management direction are inputs to the Experience and Economy Briefs. Assessment will establish the current relationship between the park and the community's planning direction."
       },
       {
         "year": "Unknown",
         "name": "Comprehensive Plan",
-        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
     ],
     "briefs": {
@@ -3378,8 +3295,7 @@ var DATA ={
     },
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_20.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_20.jpg",
-    "color": "#E87D52",
-    "tile_src": "pop: 2020 Census (secondary) ; elev: unverified"
+    "color": "#E87D52"
   },
   "fort_stockton": {
     "eyebrow": "City of Fort Stockton, Pecos County, Texas, USA",
@@ -3672,37 +3588,27 @@ var DATA ={
       {
         "year": "Ongoing",
         "name": "Permian Basin Energy Sector Operations",
-        "intent": "Reeves County is among the highest-producing oil and gas counties in the Permian Basin. Energy sector activity drives workforce housing demand, infrastructure pressure, and municipal fiscal conditions across the county. Assessment will document current conditions and establish what the county’s civic leadership wants to govern alongside that activity.",
-        "src": "https://www.rrc.texas.gov/news/texas-oil-and-gas-production-statistics-for-december-2025/",
-        "checked": "2026-10-20"
+        "intent": "Reeves County is among the highest-producing oil and gas counties in the Permian Basin. Energy sector activity drives workforce housing demand, infrastructure pressure, and municipal fiscal conditions across the county. Assessment will document current conditions and establish what the county’s civic leadership wants to govern alongside that activity."
       },
       {
         "year": "Ongoing",
         "name": "Annual City Budget: Pecos",
-        "intent": "City of Pecos annual budgets on public record. Establishes the primary municipal fiscal baseline within the county. Assessment will map HOT allocations and capital commitments.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "City of Pecos annual budgets on public record. Establishes the primary municipal fiscal baseline within the county. Assessment will map HOT allocations and capital commitments."
       },
       {
         "year": "Unknown",
         "name": "Comprehensive Plan",
-        "intent": "No county comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "No county comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       },
       {
         "year": "Oct 2026",
         "name": "Capshaw Solar Tax Abatement (Chapter 312)",
-        "intent": "Commissioners Court took up a Chapter 312 tax abatement agreement with Stetson Renewables Holdings, LLC on October 13, 2026, for a 250 MW solar facility by Capshaw Solar, LLC in a proposed Capshaw Solar Reinvestment Zone, with an estimated $256 million in improvements.",
-        "src": "https://www.reevescounty.org/home/showpublisheddocument/6536/639246564657830000",
-        "checked": "2026-10-20"
+        "intent": "Commissioners Court took up a Chapter 312 tax abatement agreement with Stetson Renewables Holdings, LLC on October 13, 2026, for a 250 MW solar facility by Capshaw Solar, LLC in a proposed Capshaw Solar Reinvestment Zone, with an estimated $256 million in improvements."
       },
       {
         "year": "2026",
         "name": "Reeves County Waterpark",
-        "intent": "Registered with TDLR in July 2026: owner Reeves County, 70 CR 118, estimated $54.5 million, construction scheduled September 2026 to December 2027.",
-        "src": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025633",
-        "checked": "2026-10-20"
+        "intent": "Registered with TDLR in July 2026: owner Reeves County, 70 CR 118, estimated $54.5 million, construction scheduled September 2026 to December 2027."
       }
     ],
     "briefs": {
@@ -3806,8 +3712,7 @@ var DATA ={
     },
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Photography_17.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_17.jpg",
-    "color": "#E87D52",
-    "tile_src": "pop: Census QuickFacts V2025 ; judge: signature on Oct 13, 2026 abatement notice ; chamber/CVB: GuideStar 74-0828170 ; county HOT: unverified"
+    "color": "#E87D52"
   },
   "pecos_county": {
     "eyebrow": "Pecos County, Texas, USA",
@@ -4105,65 +4010,47 @@ var DATA ={
       {
         "year": "2016, 2021",
         "name": "West Texas Economic Development District: CEDS 2016-2020 and 2021-2025",
-        "intent": "The WTEDD Comprehensive Economic Development Strategy, administered through the Rio Grande Council of Governments, covers Brewster, Culberson, El Paso, Hudspeth, Jeff Davis and Presidio counties. Reeves County sits outside the district. The 2021-2025 strategy period has closed, and assessment will confirm the status of the next cycle. Both documents establish what the region has already attempted and asked for.",
-        "src": "https://www.riocog.org/economic-development/",
-        "checked": "2026-10-20"
+        "intent": "The WTEDD Comprehensive Economic Development Strategy, administered through the Rio Grande Council of Governments, covers Brewster, Culberson, El Paso, Hudspeth, Jeff Davis and Presidio counties. Reeves County sits outside the district. The 2016 strategy draft recommends creating a cooperative economic development body for the rural district counties, similar to the Borderplex Alliance. The 2021-2025 strategy period has closed, and assessment will confirm the status of the next cycle. Both documents establish what the region has already attempted and asked for."
       },
       {
         "year": "2021",
         "name": "HB 4305: Dark Sky HOT Proposal (87th Legislature)",
-        "intent": "Proposed authority for Presidio, Brewster and Jeff Davis county governments to use HOT revenue for dark sky infrastructure. Did not become law. The only dark sky HOT provision in the Tax Code (Section 351.10692, 2019) applies to Hill Country cities, so regional dark sky investment remains an open question for the regional frame.",
-        "src": "https://capitol.texas.gov/tlodocs/87R/analysis/html/HB04305E.htm ; https://texas.public.law/statutes/tex._tax_code_section_351.10692",
-        "checked": "2026-10-20"
+        "intent": "Proposed authority for Presidio, Brewster and Jeff Davis county governments to use HOT revenue for dark sky infrastructure. Did not become law. The only dark sky HOT provision in the Tax Code (Section 351.10692, 2019) applies to Hill Country cities, so regional dark sky investment remains an open question for the regional frame."
       },
       {
         "year": "2022",
         "name": "Greater Big Bend International Dark Sky Reserve Designation",
-        "intent": "Designated in 2022 by DarkSky International with McDonald Observatory and The Nature Conservancy as partners. The largest International Dark Sky Reserve in the world at designation, covering Jeff Davis, Brewster and Presidio counties, part of Reeves County, and protected lands in Coahuila and Chihuahua. A regional designation asset that multiple local frames reference. The regional frame establishes how the designation is governed, promoted, and protected collectively.",
-        "src": "https://mcdonaldobservatory.org/2022/04/mcdonald-observatory-partners-create-worlds-largest-international-dark-sky-reserve/",
-        "checked": "2026-10-20"
+        "intent": "Designated in 2022 by DarkSky International with McDonald Observatory and The Nature Conservancy as partners. The largest International Dark Sky Reserve in the world at designation, covering Jeff Davis, Brewster and Presidio counties, part of Reeves County, and protected lands in Coahuila and Chihuahua. A regional designation asset that multiple local frames reference. The regional frame establishes how the designation is governed, promoted, and protected collectively."
       },
       {
         "year": "2024–26",
         "name": "HOT Use: Senate Interim Hearings",
-        "intent": "Trans-Pecos officials testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. SB 913 (2025), Alpine's request to repeal its 50 percent advertising requirement, did not pass. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027. The regional frame is the instrument through which a coordinated legislative strategy is built and sustained.",
-        "src": "https://bigbendsentinel.com/2024/06/19/city-officials-advocate-for-hot-use-expansion-at-texas-capitol/ (secondary) ; https://capitol.texas.gov/tlodocs/89R/analysis/pdf/SB00913I.pdf ; https://capitol.texas.gov/tlodocs/89R/schedules/html/C5252026092209001.HTM",
-        "checked": "2026-10-20"
+        "intent": "Trans-Pecos officials testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. SB 913 (2025), Alpine's request to repeal its 50 percent advertising requirement, did not pass. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027. The regional frame is the instrument through which a coordinated legislative strategy is built and sustained."
       },
       {
         "year": "Unknown",
         "name": "RGCOG Regional Transportation and Infrastructure Plans",
-        "intent": "Rio Grande Council of Governments regional transportation and infrastructure planning documents. Assessment will identify which documents are active, which have lapsed, and what the current planning baseline is for regional infrastructure decisions affecting Trans-Pecos communities.",
-        "src": "n/a: assessment placeholder",
-        "checked": "2026-10-20"
+        "intent": "Rio Grande Council of Governments regional transportation and infrastructure planning documents. Assessment will identify which documents are active, which have lapsed, and what the current planning baseline is for regional infrastructure decisions affecting Trans-Pecos communities."
       },
       {
         "year": "Unknown",
         "name": "Texas Parks and Wildlife: Trans-Pecos Regional Plans",
-        "intent": "TPWD manages significant land in the Trans-Pecos region including Big Bend Ranch State Park and Balmorhea State Park. Institutional planning direction and visitor management documents are inputs to the regional Experience and Environment Briefs.",
-        "src": "https://tpwd.texas.gov/state-parks/balmorhea",
-        "checked": "2026-10-20"
+        "intent": "TPWD manages significant land in the Trans-Pecos region including Big Bend Ranch State Park and Balmorhea State Park. Institutional planning direction and visitor management documents are inputs to the regional Experience and Environment Briefs."
       },
       {
         "year": "2026",
         "name": "Smithsonian “Spark! Places of Innovation”",
-        "intent": "A Smithsonian Museum on Main Street exhibition, anchored at the Museum of the Big Bend in Alpine from July 3 to August 8, 2026, through the Texas Historical Commission's Texas Heritage Trails Program. Fort Davis hosted a companion exhibit at Hotel Limpia, with tie-in programming across the region.",
-        "src": "https://www.museumofthebigbend.com/spark/ ; https://www.fortdavis.com/moms",
-        "checked": "2026-10-20"
+        "intent": "A Smithsonian Museum on Main Street exhibition, anchored at the Museum of the Big Bend in Alpine from July 3 to August 8, 2026, through the Texas Historical Commission's Texas Heritage Trails Program. Fort Davis hosted a companion exhibit at Hotel Limpia, with tie-in programming across the region."
       },
       {
         "year": "Ongoing",
         "name": "Trost Trail",
-        "intent": "A heritage tourism route created by the Texas Mountain Trail Region, connecting Henry Trost's hotel architecture in Marathon, Alpine, Marfa and Van Horn, extending to El Paso.",
-        "src": "https://authentictexas.com/the-hotels-that-trost-built/ (secondary) ; https://texastimetravel.com/regions/mountain-trail/trost-trail/",
-        "checked": "2026-10-20"
+        "intent": "A heritage tourism route created by the Texas Mountain Trail Region, connecting Henry Trost's hotel architecture in Marathon, Alpine, Marfa and Van Horn, extending to El Paso."
       },
       {
         "year": "2026",
         "name": "2026 Far West Texas Water Plan (Region E)",
-        "intent": "Regional water plan under Senate Bill 1, prepared by the Far West Texas Water Planning Group with the Rio Grande Council of Governments as administrative agent, and approved by the TWDB Board on January 22, 2026. Region E covers Brewster, Culberson, El Paso, Hudspeth, Jeff Davis, Presidio and Terrell counties. Reeves County, home to Pecos and Balmorhea, sits in Region F. The 2031 planning cycle is underway.",
-        "src": "https://www.twdb.texas.gov/waterplanning/rwp/plans/2026/index.asp ; https://www.twdb.texas.gov/waterplanning/rwp/regions/E/index.asp",
-        "checked": "2026-10-20"
+        "intent": "Regional water plan under Senate Bill 1, prepared by the Far West Texas Water Planning Group with the Rio Grande Council of Governments as administrative agent, and approved by the TWDB Board on January 22, 2026. Region E covers Brewster, Culberson, El Paso, Hudspeth, Jeff Davis, Presidio and Terrell counties. Reeves County, home to Pecos and Balmorhea, sits in Region F. The 2031 planning cycle is underway."
       }
     ],
     "briefs": {
@@ -4268,7 +4155,25 @@ var DATA ={
     "img": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/WTxMd.jpg",
     "seal": "https://raw.githubusercontent.com/codybarnickel/tpf-assets/main/TPF_Seals_25.png",
     "color": "#8B3020",
-    "tile_src": "n/a"
+    "onRecord": {
+      "vision": [
+        {
+          "lead": "The West Texas Economic Development District (WTEDD) region will become a preferred location for businesses and entrepreneurs looking for:",
+          "items": [
+            "A unique region proud of its identity and cultural heritage,",
+            "A dynamic, globally-competitive workforce,",
+            "World-class public infrastructure,",
+            "High quality of life for new and existing residents, and",
+            "A supportive environment that is conducive to strong, sustainable, and resilient economic growth and prosperity."
+          ],
+          "status": "Draft; adoption not on record",
+          "source": "West Texas Comprehensive Economic Development Strategy 2016-2020, p. 11",
+          "by": "West Texas Economic Development District, Rio Grande Council of Governments",
+          "date": "November 2016",
+          "url": "https://cms7files1.revize.com/alpinetxnew/document_center/Blog/2016-2020_CEDS_Draft_11.21.2016.pdf"
+        }
+      ]
+    }
   }
 };
 function showEntry(){
@@ -4300,6 +4205,20 @@ function showLF(id){
   document.getElementById("lf-title").textContent = d.title;
   document.getElementById("lf-narrative").textContent = d.narrative;
   document.getElementById("lf-vision").textContent = d.vision;
+  (function(){
+    var esc = function(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); };
+    var meta = function(e, lbl){ return '<div class="onrec-meta">'+esc(lbl)+' &middot; '+esc(e.status)+' &middot; '+(e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.source)+'</a>':esc(e.source))+' &middot; '+esc(e.by)+' &middot; '+esc(e.date)+'</div>'; };
+    var block = function(e, fallbackLabel){
+      var s = '<div class="onrec">';
+      if(e.q){ s += '<p class="onrec-q">&ldquo;'+esc(e.q)+'&rdquo;</p>'; }
+      if(e.lead){ s += '<p class="onrec-q">&ldquo;'+esc(e.lead)+(e.items?'':'&rdquo;')+'</p>'; }
+      if(e.items){ s += '<ul class="onrec-list" style="font-size:15px;line-height:1.6">'+e.items.map(function(i,ix){ return '<li>'+esc(i)+(ix===e.items.length-1&&e.lead?'&rdquo;':'')+'</li>'; }).join('')+'</ul>'; }
+      if(e.after){ s += '<p class="onrec-lead" style="margin-top:.5rem">'+esc(e.after)+'</p>'; }
+      return s + meta(e, e.label||fallbackLabel) + '</div>';
+    };
+    var r = d.onRecord || {};
+    document.getElementById("lf-onrec-vision").innerHTML = (r.vision||[]).map(function(e){ return block(e,"Vision on record"); }).join('');
+  })();
 
   // Tile 1
   if(d.tile1){
@@ -4371,7 +4290,7 @@ function showLF(id){
   if(d.tile3){
     var t3 = d.tile3;
     var stages = ["unengaged","engaged","assessment","frame_published","briefs_active","implementation"];
-    var stageLabels = ["Unengaged","Engaged","Assessment","Frame Published","Briefs Active","Implementation"];
+    var stageLabels = ["Open","Engaged","Assessment","Frame Published","Briefs Active","Implementation"];
     var currentIdx = stages.indexOf(t3.status);
     var barHtml = stages.map(function(s,i){
       var dotClass = i < currentIdx ? 'done' : (i === currentIdx ? 'current' : '');
@@ -4457,5 +4376,86 @@ function switchTab(b){
   });
 </script>
 <div id="copyright" style="position:fixed;bottom:2.25rem;left:2.25rem;z-index:100;font-family:'Archivo Narrow',sans-serif;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#1A1917;opacity:0;pointer-events:none;transition:opacity .3s">&copy; BARNICKEL.co</div>
+<div class="rev-ov" id="rev-ov" onclick="if(event.target===this)this.classList.remove('open')"><div class="rev-box">
+<button class="rev-close" onclick="document.getElementById('rev-ov').classList.remove('open')">Close</button>
+<h2>Revisions</h2>
+<p>Research for this framework uses AI tools to cover the volume of public records across the region. Every entry is checked against a primary source before publication, each substantive revision is logged here with its date and source, and the communities themselves have the final word.</p>
+<p>This log begins October 20, 2026, with a full review of the ten civic frames and the Regional Frame.</p>
+
+<h3>October 21, 2026</h3>
+<h4>Statements on record</h4>
+<ul>
+<li>Vision statements that already exist in public plans and official sites now appear at the top of the Character Brief for Culberson County, Pecos, the City of Presidio and the Regional Frame, with a statement of purpose for Van Horn, quoted verbatim with source, date, preparer and adoption status. Frames with no vision on record show the assessment text only.</li>
+</ul>
+<h4>Culberson County and Van Horn</h4>
+<ul>
+<li>Comprehensive plan entries revised. The Culberson County Comprehensive Plan 2020-2030, prepared by Kleinman Consultants with the county, includes a vision statement, chapter goals and a 2019 public engagement record. It covers Van Horn.</li>
+</ul>
+<h4>Pecos</h4>
+<ul>
+<li>Comprehensive plan entry revised. The Town of Pecos City 2020-2030 Comprehensive Plan, prepared by GrantWorks, Inc., was presented for acceptance on August 27, 2020. The Town also publishes a 2030 Strategic Plan with eight goals. Source: pecostx.gov.</li>
+</ul>
+<h4>Regional Frame</h4>
+<ul>
+<li>The 2016-2020 West Texas Economic Development District strategy (draft, November 2016, p. 53) recommends creating a cooperative economic development body for the rural district counties. Added with citation.</li>
+</ul>
+<h4>All frames</h4>
+<ul>
+<li>The first engagement stage is renamed Open.</li>
+</ul>
+
+<h3>October 20, 2026</h3>
+<p>Full review of the ten civic frames, Fort Davis, Van Horn and the Regional Frame against primary sources.</p>
+<h4>Regional Frame</h4>
+<ul>
+<li>Dark sky HOT entry revised. HB 4305 (87th Legislature, 2021) proposed HOT use for dark sky infrastructure in Presidio, Brewster and Jeff Davis counties. It did not become law. Source: Texas Legislature Online.</li>
+<li>Reserve entry revised to the Greater Big Bend International Dark Sky Reserve, designated 2022, the largest International Dark Sky Reserve in the world at designation, including protected lands in Coahuila and Chihuahua. Source: McDonald Observatory.</li>
+<li>HOT legislative entry revised. Marfa officials testified at a June 2024 Senate interim hearing on HOT use. SB 913 (2025) addressed Alpine's advertising requirement and did not pass. The 2026 Senate interim charge on HOT accountability was heard September 22, 2026. Source: Texas Legislature Online.</li>
+<li>Region E water plan entry revised to the TWDB approval date of January 22, 2026 and the full seven-county region. Source: TWDB.</li>
+<li>Spark! and Trost Trail entries dated. Source: Museum of the Big Bend; Texas Historical Commission.</li>
+</ul>
+<h4>Jeff Davis County and Fort Davis</h4>
+<ul>
+<li>Outdoor lighting entry revised to the county's 1983 order and its 2007 replacement. Source: Jeff Davis County order, December 2007.</li>
+<li>Fort Davis listed as unincorporated.</li>
+</ul>
+<h4>City of Marfa</h4>
+<ul>
+<li>Planning and zoning entry revised: council approved Ordinance No. 02-04 amendments on July 14, 2026 at five members and two alternates.</li>
+<li>Comprehensive plan entry revised: Marfa's most recent plan dates to 2017.</li>
+<li>Water tower and TWDB eligibility entries revised to the council record.</li>
+<li>Added: Dark Skies Ordinance No. 2021-09 exemption reviewed with McDonald Observatory (September 2026); Marfa Municipal Airport improvements; Texas CDBG application. Source: City of Marfa council minutes and agendas.</li>
+<li>Tourism contact added: City of Marfa Tourism.</li>
+</ul>
+<h4>City of Alpine and Brewster County</h4>
+<ul>
+<li>2016 vision plan entry revised: "Alpine, Texas: A Vision for the Future," UTSA, available on the City of Alpine website.</li>
+<li>Tourism contact added: City of Alpine Tourism.</li>
+<li>ESD #2 entry revised to the June 30, 2026 petition hearing and the November 3, 2026 ballot. Source: Brewster County.</li>
+</ul>
+<h4>Presidio County and City of Presidio</h4>
+<ul>
+<li>Geothermal entry revised: assessment completed May 2024 for the Presidio Municipal Development District. Source: UT Bureau of Economic Geology.</li>
+<li>Water infrastructure entry revised to the 2023 TWDB EDAP approval. Source: Texas Senate District 29.</li>
+<li>Added: TWDB HB 500 funding application (July 8, 2026 agenda).</li>
+<li>Removed: a 2035 vision statement attributed to the PMDD and not found in any public record. The 2024 City of Presidio and PMDD strategy, which carries a 2035 vision, now appears in full under Statements on record.</li>
+<li>Tourism contact added: Presidio Convention and Visitors Bureau.</li>
+</ul>
+<h4>Reeves County, Pecos and Balmorhea</h4>
+<ul>
+<li>Added: Capshaw Solar Chapter 312 tax abatement (October 13, 2026) and the Reeves County Waterpark (TDLR, July 2026). Source: Reeves County; TDLR.</li>
+<li>Removed: a solar abatement entry not found in any county record.</li>
+<li>Tourism contact revised to the Pecos Area Chamber of Commerce and CVB.</li>
+</ul>
+<h4>Culberson County and Van Horn</h4>
+<ul>
+<li>Desert Hill Solar entry dated to the July 13 and August 10, 2026 agendas. Source: Culberson County.</li>
+<li>Blue Origin entries revised to the 2006 FAA record.</li>
+</ul>
+<h4>All civic frames</h4>
+<ul>
+<li>Officials, populations (U.S. Census) and elevations updated where a primary source was found.</li>
+</ul>
+</div></div>
 </body>
 </html>
