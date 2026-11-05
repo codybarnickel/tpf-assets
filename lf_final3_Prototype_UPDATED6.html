@@ -61,7 +61,7 @@ html,body{height:100%;font-family:"Archivo",sans-serif;font-size:14px;color:#1A1
 
 .lf-below-img{padding:4.5rem;flex:1;overflow-y:auto}
 .lf-plan-inputs{margin-top:3rem;padding-top:2rem;border-top:1px solid #1A1917}
-.plan-inputs-label{font-family:"Archivo Narrow",sans-serif;font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#1A1917;margin-bottom:1rem}
+.brief-dot.open{background:transparent!important;box-shadow:inset 0 0 0 1px currentColor}.brief-dot.open.env{color:#4A5E3A}.brief-dot.open.exp{color:#A87020}.brief-dot.open.eco{color:#8B3020}.brief-dot.open.eng{color:#6B4828}.plan-input-briefs{margin-left:.5rem;white-space:nowrap}.plan-inputs-legend{display:flex;flex-wrap:wrap;gap:.35rem 1rem;font-family:"Archivo Narrow",sans-serif;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#1A1917;margin:-.5rem 0 1rem}.plan-inputs-label{font-family:"Archivo Narrow",sans-serif;font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#1A1917;margin-bottom:1rem}
 .plan-input{display:grid;grid-template-columns:3rem 1fr;gap:.5rem 1rem;margin-bottom:.75rem;align-items:baseline}
 .plan-input-year{font-family:"Archivo Narrow",sans-serif;font-size:9px;font-weight:700;color:#1A1917;white-space:nowrap}
 .plan-input-name{font-size:12px;font-weight:700;color:#1A1917}
@@ -418,34 +418,41 @@ var DATA ={
     "narrative": "The narrative observes Jeff Davis County as it exists today, in present tense: its landscape, history, economy and civic character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with community input before publication.",
     "planInputs": [
       {
-        "year": "1983, 2007",
-        "name": "Outdoor Lighting Order",
-        "intent": "Jeff Davis County's outdoor lighting order protects the night sky above McDonald Observatory. The county adopted an order in 1983 and replaced it with the current order, effective December 1, 2007, under Local Government Code Section 240.032."
-      },
-      {
-        "year": "2021",
-        "name": "HB 4305: Dark Sky HOT Proposal (87th Legislature)",
-        "intent": "Proposed authority for Jeff Davis, Brewster and Presidio county governments to use HOT revenue for dark sky infrastructure. It did not become law. Reinvesting tourism revenue in the county's defining asset remains an open question."
+        "year": "2026",
+        "briefs": ["exp", "eng"],
+        "extends": ["eco"],
+        "name": "Smithsonian “Spark! Places of Innovation,” Local Deployment",
+        "intent": "Fort Davis hosted a Spark! exhibit at Hotel Limpia, July 3 to August 8, 2026, with programming from McDonald Observatory, Fort Davis National Historic Site and the Chihuahuan Desert Research Institute."
       },
       {
         "year": "2022",
+        "briefs": ["env", "exp"],
         "name": "Greater Big Bend International Dark Sky Reserve Designation",
         "intent": "Jeff Davis County lies within the reserve. Designated in 2022 by DarkSky International with McDonald Observatory and The Nature Conservancy as partners. The largest International Dark Sky Reserve in the world at designation, covering Jeff Davis, Brewster and Presidio counties, part of Reeves County, and protected lands in Coahuila and Chihuahua."
       },
       {
+        "year": "2021",
+        "briefs": ["env", "exp"],
+        "name": "HB 4305: Dark Sky HOT Proposal (87th Legislature)",
+        "intent": "Proposed authority for Jeff Davis, Brewster and Presidio county governments to use HOT revenue for dark sky infrastructure. It did not become law. Reinvesting tourism revenue in the county's defining asset remains an open question."
+      },
+      {
+        "year": "1983, 2007",
+        "briefs": ["env"],
+        "name": "Outdoor Lighting Order",
+        "intent": "Jeff Davis County's outdoor lighting order protects the night sky above McDonald Observatory. The county adopted an order in 1983 and replaced it with the current order, effective December 1, 2007, under Local Government Code Section 240.032."
+      },
+      {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Comprehensive Plan",
         "intent": "No county comprehensive plan confirmed at time of writing. Direct inquiry required. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Municipal Plans: Fort Davis, Valentine",
         "intent": "Municipal planning documents for Fort Davis and Valentine not confirmed at time of writing. Assessment will identify what is in active use at the community level within the county."
-      },
-      {
-        "year": "2026",
-        "name": "Smithsonian “Spark! Places of Innovation,” Local Deployment",
-        "intent": "Fort Davis hosted a Spark! exhibit at Hotel Limpia, July 3 to August 8, 2026, with programming from McDonald Observatory, Fort Davis National Historic Site and the Chihuahuan Desert Research Institute."
       }
     ],
     "briefs": {
@@ -530,7 +537,7 @@ var DATA ={
     },
     "tile2": {
       "champion": "None confirmed",
-      "mayorjudge": "None confirmed",
+      "mayorjudge": "Buster Mills (elected November 3, 2026; takes office January 1, 2027)",
       "mayorjudge_label": "County Judge",
       "chamber": "Fort Davis Chamber of Commerce",
       "chamber_link": true,
@@ -572,64 +579,77 @@ var DATA ={
     "narrative": "The narrative observes Marfa as it exists today, in present tense: its landscape, history, economy and character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with the community before publication.",
     "planInputs": [
       {
-        "year": "Ongoing",
-        "name": "Annual City Budget",
-        "intent": "City of Marfa annual budgets on public record. Establishes the municipal fiscal baseline and active spending priorities. Assessment will map HOT allocations and capital commitments."
-      },
-      {
-        "year": "Ongoing",
-        "name": "Planning and Zoning Updates",
-        "intent": "P&Z updates on record, including amendments to Ordinance No. 02-04 on commission membership, approved by council July 14, 2026 at five members and two alternates, and proposed zoning ordinance changes heading to a council public hearing in November 2026. Assessment will identify what other land use decisions are active, what is pending, and what standards are currently enforced."
-      },
-      {
-        "year": "2024–26",
-        "name": "HOT Use: Senate Interim Hearings",
-        "intent": "Marfa officials, including Mayor Manny Baeza, testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027."
-      },
-      {
-        "year": "Ongoing",
-        "name": "Short-Term Rental Market Conditions",
-        "intent": "Short-term rental growth is a documented pressure in a city of about 1,700 people. Assessment will establish current supply figures. The Experience and Economy Briefs need to address it directly."
-      },
-      {
-        "year": "2017",
-        "name": "Comprehensive Plan",
-        "intent": "Marfa's most recent comprehensive plan was completed in 2017, with an update anticipated. Assessment will map where the 2017 plan still governs and what the update needs to include."
-      },
-      {
-        "year": "Ongoing",
-        "name": "Chinati Foundation Institutional Plans",
-        "intent": "Chinati Foundation is the primary anchor of Marfa’s arts and cultural economy. Its institutional direction (programming, campus, public access) is a material input to the Experience and Economy Briefs. Direct engagement with the Foundation is part of the assessment."
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "name": "Texas CDBG Application",
+        "intent": "Council authorized procurement in October 2026 for administrative services on a Texas Community Development Block Grant application of up to $750,000 for water, wastewater, streets and drainage, due November 19, 2026."
       },
       {
         "year": "2026",
+        "briefs": ["exp", "eco"],
         "name": "Water Tower Lease",
         "intent": "Council tabled competing lease offers from 307 Digital and MD7 in June 2026 and took no action on an MD7 letter of intent on August 11, 2026. Assessment will confirm current status."
       },
       {
         "year": "2026",
+        "briefs": ["env"],
         "name": "TWDB Funding Eligibility: Water Infrastructure",
         "intent": "Under the interlocal agreement with Presidio County, the county owns the Fort D.A. Russell and East Heights water infrastructure, which shapes how Marfa applies for TWDB funding. The July 14, 2026 council agenda includes the eligibility question."
       },
       {
-        "year": "Ongoing",
-        "name": "Trost Trail, Local Deployment",
-        "intent": "The Hotel Paisano is a Trost & Trost design on the regional Trost Trail."
-      },
-      {
-        "year": "2021",
-        "name": "Dark Skies Ordinance No. 2021-09",
-        "intent": "Marfa's outdoor lighting ordinance. In September 2026, council granted a temporary, conditioned exemption for an Art Blocks projection after review with McDonald Observatory."
-      },
-      {
         "year": "2026",
+        "briefs": ["exp", "eco"],
         "name": "Marfa Municipal Airport Improvements",
         "intent": "Presidio County reports a completed $4.2 million airport project and approval for about $29 million in further improvements, with city HOT funds serving as the local grant match."
       },
       {
-        "year": "2026",
-        "name": "Texas CDBG Application",
-        "intent": "Council authorized procurement in fall 2026 for administrative services on a Texas Community Development Block Grant application, with a maximum award of $750,000."
+        "year": "2024–2026",
+        "briefs": ["exp", "eco"],
+        "name": "HOT Use: Senate Interim Hearings",
+        "intent": "Marfa officials, including Mayor Manny Baeza, testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027."
+      },
+      {
+        "year": "2021",
+        "briefs": ["env"],
+        "name": "Dark Skies Ordinance No. 2021-09",
+        "intent": "Marfa's outdoor lighting ordinance. In September 2026, council granted a temporary, conditioned exemption for an Art Blocks projection after review with McDonald Observatory."
+      },
+      {
+        "year": "2017",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Comprehensive Plan",
+        "intent": "Marfa's most recent comprehensive plan was completed in 2017, with an update anticipated. Assessment will map where the 2017 plan still governs and what the update needs to include."
+      },
+      {
+        "year": "Ongoing",
+        "briefs": ["eco"],
+        "name": "Annual City Budget",
+        "intent": "City of Marfa annual budgets on public record. Establishes the municipal fiscal baseline and active spending priorities. Assessment will map HOT allocations and capital commitments."
+      },
+      {
+        "year": "Ongoing",
+        "briefs": ["env", "eco"],
+        "name": "Planning and Zoning Updates",
+        "intent": "P&Z updates on record, including amendments to Ordinance No. 02-04 on commission membership, approved by council July 14, 2026 at five members and two alternates, and proposed housing amendments, including removal of the mixed-use prohibition and form-based standards for dwellings, set for a council public hearing on November 9, 2026. Assessment will identify what other land use decisions are active, what is pending, and what standards are currently enforced."
+      },
+      {
+        "year": "Ongoing",
+        "briefs": ["exp", "eco"],
+        "name": "Short-Term Rental Market Conditions",
+        "intent": "Short-term rental growth is a documented pressure in a city of about 1,700 people. Assessment will establish current supply figures."
+      },
+      {
+        "year": "Ongoing",
+        "briefs": ["exp", "eco"],
+        "name": "Chinati Foundation Institutional Plans",
+        "intent": "Chinati Foundation is the primary anchor of Marfa’s arts and cultural economy. Assessment covers its institutional direction (programming, campus, public access) and direct engagement with the Foundation."
+      },
+      {
+        "year": "Ongoing",
+        "briefs": ["exp"],
+        "extends": ["eco"],
+        "name": "Trost Trail, Local Deployment",
+        "intent": "The Hotel Paisano is a Trost & Trost design on the regional Trost Trail."
       }
     ],
     "briefs": {
@@ -756,24 +776,29 @@ var DATA ={
     "narrative": "The narrative observes Fort Davis as it exists today, in present tense: its landscape, history, economy and character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with the community before publication.",
     "planInputs": [
       {
-        "year": "1983, 2007",
-        "name": "Outdoor Lighting Order (County)",
-        "intent": "Jeff Davis County's outdoor lighting order, first adopted in 1983 and replaced in 2007, protects the night sky above McDonald Observatory. Fort Davis sits at the center of this governance legacy. Assessment will document how the order shapes development standards at the community level."
+        "year": "2026",
+        "briefs": ["exp", "eng"],
+        "extends": ["eco"],
+        "name": "Smithsonian “Spark! Places of Innovation,” Local Deployment",
+        "intent": "Fort Davis hosted a Spark! exhibit at Hotel Limpia, July 3 to August 8, 2026, with programming from McDonald Observatory, Fort Davis National Historic Site and the Chihuahuan Desert Research Institute."
       },
       {
         "year": "2022",
+        "briefs": ["env", "exp"],
         "name": "Greater Big Bend International Dark Sky Reserve Designation",
         "intent": "Fort Davis sits at the center of the largest International Dark Sky Reserve in the world at its 2022 designation. Assessment will identify how the designation is currently leveraged and what gaps exist between the designation and community-level planning."
       },
       {
-        "year": "Unknown",
-        "name": "Comprehensive Plan",
-        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
+        "year": "1983, 2007",
+        "briefs": ["env"],
+        "name": "Outdoor Lighting Order (County)",
+        "intent": "Jeff Davis County's outdoor lighting order, first adopted in 1983 and replaced in 2007, protects the night sky above McDonald Observatory. Fort Davis sits at the center of this governance legacy. Assessment will document how the order shapes development standards at the community level."
       },
       {
-        "year": "2026",
-        "name": "Smithsonian “Spark! Places of Innovation,” Local Deployment",
-        "intent": "Fort Davis hosted a Spark! exhibit at Hotel Limpia, July 3 to August 8, 2026, with programming from McDonald Observatory, Fort Davis National Historic Site and the Chihuahuan Desert Research Institute."
+        "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Comprehensive Plan",
+        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
     ],
     "briefs": {
@@ -900,69 +925,83 @@ var DATA ={
     "narrative": "Sandpoint’s identity comes from generations of living beside Lake Pend Oreille. The lake organizes the town. It is why people came and why they stayed, and it frames the question of what Sandpoint becomes next. The waterfront, the historic downtown and the relationship between the lake and the seasons are the foundation every new decision builds on. This Framework puts that standard in writing for the decisions that follow.",
     "planInputs": [
       {
-        "year": "2009",
-        "name": "Comprehensive Plan",
-        "intent": "Guide Sandpoint and its vicinity development and growth patterns"
-      },
-      {
-        "year": "2015",
-        "name": "Pend d'Oreille Bay Trail Master Plan",
-        "intent": "Weave communities and Lake Pend Oreille together, physically and socially"
-      },
-      {
-        "year": "2016",
-        "name": "Storm Water Facilities Plan",
-        "intent": "Storm water collection evaluation and improvements"
-      },
-      {
-        "year": "2019",
-        "name": "Wastewater Treatment Plant Facility Plan",
-        "intent": "Evaluate the City treatment needs"
-      },
-      {
-        "year": "2019",
-        "name": "Timber Management Plan",
-        "intent": "Watershed timber resources, productivity, and harvest"
-      },
-      {
-        "year": "2020",
-        "name": "Parks and Recreation Master Plan",
-        "intent": "Guide the future of parks, recreation, trails and open space"
-      },
-      {
-        "year": "2021",
-        "name": "Sandpoint Arts, Culture, and Historic Preservation Plan",
-        "intent": "Community-based planning process for local preservation and arts and culture"
-      },
-      {
-        "year": "2021",
-        "name": "Multimodal Transportation Plan",
-        "intent": "Planning for safe and convenient travel for all users and the Complete Streets Policy"
-      },
-      {
-        "year": "2021",
-        "name": "Little Sandcreek Watershed Management Plan",
-        "intent": "Long-term environmental stewardship focused on water quality"
-      },
-      {
-        "year": "2021",
-        "name": "Collection System Capital Improvement Plan",
-        "intent": "Identify capital projects for pipelines, manholes, and lift stations"
-      },
-      {
         "year": "2022",
+        "briefs": ["eco", "eng"],
         "name": "Strategic Plan",
         "intent": "Plan priorities for 2022 through 2027"
       },
       {
         "year": "2022",
+        "briefs": ["env"],
         "name": "Urban Forestry Management Plan",
         "intent": "Common vision for urban forest health and sustainability"
       },
       {
         "year": "2022",
+        "briefs": ["env"],
         "name": "Water System Master Plan",
         "intent": "Public drinking water system information, analysis, and recommendations"
+      },
+      {
+        "year": "2021",
+        "briefs": ["exp", "eng"],
+        "extends": ["eco"],
+        "name": "Sandpoint Arts, Culture, and Historic Preservation Plan",
+        "intent": "Community-based planning process for local preservation and arts and culture"
+      },
+      {
+        "year": "2021",
+        "briefs": ["exp", "eco"],
+        "name": "Multimodal Transportation Plan",
+        "intent": "Planning for safe and convenient travel for all users and the Complete Streets Policy"
+      },
+      {
+        "year": "2021",
+        "briefs": ["env"],
+        "name": "Little Sandcreek Watershed Management Plan",
+        "intent": "Long-term environmental stewardship focused on water quality"
+      },
+      {
+        "year": "2021",
+        "briefs": ["env"],
+        "name": "Collection System Capital Improvement Plan",
+        "intent": "Identify capital projects for pipelines, manholes, and lift stations"
+      },
+      {
+        "year": "2020",
+        "briefs": ["env", "exp"],
+        "name": "Parks and Recreation Master Plan",
+        "intent": "Guide the future of parks, recreation, trails and open space"
+      },
+      {
+        "year": "2019",
+        "briefs": ["env"],
+        "name": "Wastewater Treatment Plant Facility Plan",
+        "intent": "Evaluate the City treatment needs"
+      },
+      {
+        "year": "2019",
+        "briefs": ["env", "eco"],
+        "name": "Timber Management Plan",
+        "intent": "Watershed timber resources, productivity, and harvest"
+      },
+      {
+        "year": "2016",
+        "briefs": ["env"],
+        "name": "Storm Water Facilities Plan",
+        "intent": "Storm water collection evaluation and improvements"
+      },
+      {
+        "year": "2015",
+        "briefs": ["env", "exp"],
+        "name": "Pend d'Oreille Bay Trail Master Plan",
+        "intent": "Weave communities and Lake Pend Oreille together, physically and socially"
+      },
+      {
+        "year": "2009",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Comprehensive Plan",
+        "intent": "Guide Sandpoint and its vicinity development and growth patterns"
       }
     ],
     "briefs": {
@@ -1157,16 +1196,19 @@ var DATA ={
     "planInputs": [
       {
         "year": "2024",
+        "briefs": ["eco"],
         "name": "CDBG Hearing on Record",
         "intent": "Commissioners Court CDBG hearing documented March 2024. Establishes that the county is engaged in federal community development grant processes. Assessment will identify active applications and capital priorities."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Comprehensive Plan",
         "intent": "No county comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Municipal Plans: Sierra Blanca, Fort Hancock, Dell City",
         "intent": "Municipal planning documents for principal communities not confirmed. Assessment will identify what is in active use at the community level within the county."
       }
@@ -1295,24 +1337,30 @@ var DATA ={
     "narrative": "Culberson County covers 3,813 square miles of the Trans-Pecos, and less than two percent of it is developed. Guadalupe Peak, the highest point in Texas, stands in the northwest corner inside Guadalupe Mountains National Park. Van Horn sits on Interstate 10, about 120 miles east of El Paso, and is home to most of the county's people and nearly all of its services. Ranching, mineral extraction, rail and highway travel built the county, and energy now makes up much of its tax base, with more than two billion dollars in appraised mineral value. Blue Origin's launch site sits in the ranchland north of town. Residents' concerns are practical: roads carrying more weight than they were built for, emergency response across long distances, water, and the look of the county from the highway.",
     "planInputs": [
       {
-        "year": "2020-2030",
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
+        "name": "Desert Hill Solar, LLC Tax Abatement Application",
+        "intent": "A Chapter 312 tax abatement application from Desert Hill Solar, LLC appears on the Commissioners Court agendas of July 13 and August 10, 2026."
+      },
+      {
+        "year": "2020–2030",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Culberson County Comprehensive Plan 2020-2030",
         "intent": "Prepared by Kleinman Consultants with the county under a state planning grant, with a vision statement, chapter goals and a 2019 public engagement record. An adoption order is not located in the public record. Assessment will establish where the plan still guides decisions and what has changed since it was written."
       },
       {
-        "year": "Unknown",
-        "name": "Municipal Seal and Identity System",
-        "intent": "Municipal and county seals on record. Identity system and design guidelines unknown. Assessment will document what exists and identify gaps."
-      },
-      {
         "year": "Ongoing",
+        "briefs": ["eco"],
+        "extends": ["env", "exp", "eng"],
         "name": "Blue Origin Launch Site One Presence",
         "intent": "Blue Origin's Launch Site One has flown from Culberson County since 2006, about 30 miles north of Van Horn. Local views on its economic return vary, from payroll impact to expectations of a larger boom. Assessment will map the current relationship and identify what the community wants from it."
       },
       {
-        "year": "Jul–Aug 2026",
-        "name": "Desert Hill Solar, LLC Tax Abatement Application",
-        "intent": "A Chapter 312 tax abatement application from Desert Hill Solar, LLC appears on the Commissioners Court agendas of July 13 and August 10, 2026."
+        "year": "Unknown",
+        "briefs": ["exp"],
+        "name": "Municipal Seal and Identity System",
+        "intent": "Municipal and county seals on record. Identity system and design guidelines unknown. Assessment will document what exists and identify gaps."
       }
     ],
     "briefs": {
@@ -1483,49 +1531,66 @@ var DATA ={
     "narrative": "The narrative observes Presidio County as it exists today, in present tense: its landscape, history, economy and civic character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with community input before publication.",
     "planInputs": [
       {
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
+        "name": "Shafter Mine Wastewater Permit",
+        "intent": "TCEQ held a public hearing in Presidio on October 27, 2026 on Black Bear Minerals’ application to discharge an average of 360,000 gallons a day from the Shafter mine. A permit decision is pending."
+      },
+      {
+        "year": "2026",
+        "briefs": ["env"],
+        "name": "TWDB HB 500 Funding Application",
+        "intent": "The July 8, 2026 Commissioners Court agenda includes an application to TWDB for HB 500 funding."
+      },
+      {
+        "year": "2025–2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
+        "name": "Open Origin Data Center Proposal",
+        "intent": "Reported in 2025 as an approximately 80,000-acre campus southeast of Marfa, with groundwater use cited by a county official at about 800 acre-feet a year, compared with Marfa's roughly 550. No county agenda item to date."
+      },
+      {
+        "year": "2024–2026",
+        "briefs": ["exp", "eco"],
+        "name": "HOT Use: Senate Interim Hearings",
+        "intent": "Marfa officials, including Mayor Manny Baeza, testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027."
+      },
+      {
+        "year": "2024",
+        "briefs": ["env", "eco"],
+        "name": "UT Bureau of Economic Geology Geothermal Assessment",
+        "intent": "Completed in May 2024 for the Presidio Municipal Development District, assessing geothermal resources in Presidio County."
+      },
+      {
+        "year": "2023",
+        "briefs": ["env"],
+        "name": "Presidio County Water Infrastructure (TWDB EDAP)",
+        "intent": "In 2023, TWDB approved about $4 million through its Economically Distressed Areas Program for design and construction of Marfa's Fort D.A. Russell and East Heights systems, and for planning and design in Las Pampas and Shafter. The effort grew from a 2022 multi-community committee including the Presidio County Underground Water Conservation District."
+      },
+      {
         "year": "Ongoing",
+        "briefs": ["eco"],
         "name": "Annual City Budgets: Marfa, Presidio",
         "intent": "Annual budgets on public record for both principal cities. Establishes fiscal baselines and active spending priorities for each municipality within the county."
       },
       {
         "year": "Ongoing",
+        "briefs": ["env", "eco"],
         "name": "Planning and Zoning: Marfa",
         "intent": "P&Z updates on record for Marfa, including amendments to Ordinance No. 02-04 on commission membership, approved by council July 14, 2026. Assessment will identify what other land use decisions are active and what standards are currently enforced."
       },
       {
-        "year": "2024–26",
-        "name": "HOT Use: Senate Interim Hearings",
-        "intent": "Marfa officials, including Mayor Manny Baeza, testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027."
-      },
-      {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Presidio City Planning Documents",
         "intent": "City of Presidio and Presidio Municipal Development District planning documents. Assessment will identify what is in active use."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "County Comprehensive Plan",
         "intent": "No Presidio County comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists or represents a gap."
-      },
-      {
-        "year": "2024",
-        "name": "UT Bureau of Economic Geology Geothermal Assessment",
-        "intent": "Completed in May 2024 for the Presidio Municipal Development District, assessing geothermal resources in Presidio County."
-      },
-      {
-        "year": "2025–26",
-        "name": "Open Origin Data Center Proposal",
-        "intent": "Reported in 2025 as an approximately 80,000-acre campus southeast of Marfa, with groundwater use cited by a county official at about 800 acre-feet a year, compared with Marfa's roughly 550. No county agenda item to date."
-      },
-      {
-        "year": "2023",
-        "name": "Presidio County Water Infrastructure (TWDB EDAP)",
-        "intent": "In 2023, TWDB approved about $4 million through its Economically Distressed Areas Program for design and construction of Marfa's Fort D.A. Russell and East Heights systems, and for planning and design in Las Pampas and Shafter. The effort grew from a 2022 multi-community committee including the Presidio County Underground Water Conservation District."
-      },
-      {
-        "year": "2026",
-        "name": "TWDB HB 500 Funding Application",
-        "intent": "The July 8, 2026 Commissioners Court agenda includes an application to TWDB for HB 500 funding."
       }
     ],
     "briefs": {
@@ -1652,34 +1717,47 @@ var DATA ={
     "narrative": "The narrative observes Brewster County as it exists today, in present tense: its landscape, history, economy and civic character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with community input before publication.",
     "planInputs": [
       {
-        "year": "2016",
-        "name": "Alpine Vision Plan",
-        "intent": "\"Alpine, Texas: A Vision for the Future,\" prepared in August 2016 by UTSA's Center for Urban and Regional Planning Research, covering downtown Alpine with citywide and regional data. Available on the City of Alpine website. Assessment will determine its current standing."
+        "year": "2026",
+        "briefs": ["eco"],
+        "name": "Emergency Services District #2",
+        "intent": "Voters approved formation of Emergency Services District #2 on November 3, 2026, 2,498 to 533 (unofficial results). The Commissioners Court order establishing the district is on the November 10, 2026 agenda, with the canvass."
+      },
+      {
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
+        "name": "Pacifico Energy Glass Mountains Data Center Proposal",
+        "intent": "Pacifico Energy met with county officials in September 2026 about an off-grid, gas-powered data center on an 8,400-acre ranch in the Glass Mountains northeast of Alpine, in a feasibility phase. The county discussed a possible development agreement. No agreement is on record."
       },
       {
         "year": "2022",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Strategic Plan Initiated: Alpine",
         "intent": "Strategic planning process launched in 2022, with community town halls from October to December. Adoption status unconfirmed. Assessment will determine current status and active commitments."
       },
       {
         "year": "2022",
+        "briefs": ["exp", "eco"],
         "name": "HOT Governance on Record: Brewster County",
         "intent": "Commissioner Sara Allen Colando publicly questioned marketing-focused HOT spending in 2022. Establishes county-level awareness of the HOT governance question ahead of the regional legislative argument. Assessment will map current HOT deployment and stated priorities."
       },
       {
+        "year": "2016",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Alpine Vision Plan",
+        "intent": "\"Alpine, Texas: A Vision for the Future,\" prepared in August 2016 by UTSA's Center for Urban and Regional Planning Research, covering downtown Alpine with citywide and regional data. Available on the City of Alpine website. Assessment will determine its current standing."
+      },
+      {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Marathon Planning Documents",
         "intent": "Marathon planning and chamber documents unknown at time of writing. Assessment will identify what exists at the community level."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "County Comprehensive Plan",
         "intent": "No Brewster County comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists or represents a gap."
-      },
-      {
-        "year": "Nov 2026",
-        "name": "ESD #2 on the November Ballot",
-        "intent": "Commissioners Court held the petition hearing at its June 30, 2026 special meeting. The Order of Election places formation of Emergency Services District #2 on the November 3, 2026 ballot."
       }
     ],
     "briefs": {
@@ -1807,23 +1885,23 @@ var DATA ={
     "planInputs": [
       {
         "year": "Ongoing",
+        "briefs": ["eco"],
+        "extends": ["env", "exp", "eng"],
         "name": "Blue Origin Launch Site One Proximity",
         "intent": "Van Horn serves as the primary service community for Blue Origin's Launch Site One, flying since 2006 about 30 miles north of town. Local views on its economic return vary. Assessment will establish what exists, what has been attempted, and what the community wants from this relationship going forward."
       },
       {
-        "year": "Unknown",
-        "name": "Chamber Status",
-        "intent": "Current activity of the Van Horn Chamber of Commerce is unconfirmed. Assessment will confirm its status and whether a successor civic organization is active."
-      },
-      {
-        "year": "Unknown",
-        "name": "Comprehensive Plan",
-        "intent": "The Culberson County Comprehensive Plan 2020-2030 covers Van Horn as the county seat and its only incorporated town. A separate town plan is not confirmed. Assessment will establish which plan guides town decisions."
-      },
-      {
         "year": "Ongoing",
+        "briefs": ["exp"],
+        "extends": ["eco"],
         "name": "Trost Trail, Local Deployment",
         "intent": "Hotel El Capitan is a Trost & Trost design on the regional Trost Trail."
+      },
+      {
+        "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Comprehensive Plan",
+        "intent": "The Culberson County Comprehensive Plan 2020-2030 covers Van Horn as the county seat and its only incorporated town. A separate town plan is not confirmed. Assessment will establish which plan guides town decisions."
       }
     ],
     "briefs": {
@@ -1964,6 +2042,7 @@ var DATA ={
     "planInputs": [
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Community Planning Documents",
         "intent": "No community planning documents confirmed at time of writing. Assessment will identify what governance structure exists and what planning, if any, is active at the community level."
       }
@@ -2092,24 +2171,29 @@ var DATA ={
     "narrative": "The narrative observes Presidio as it exists today, in present tense: its landscape, history, economy and character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with the community before publication.",
     "planInputs": [
       {
-        "year": "Ongoing",
-        "name": "International Bridge of the Americas Operations",
-        "intent": "Presidio hosts an active international port of entry. PMDD, Presidio County and NADBank discussed a bridge ownership feasibility study in February 2025. Border crossing volume and commercial traffic are material inputs to the Economy and Experience Briefs. Assessment will map current activity and identify community priorities around the crossing."
-      },
-      {
-        "year": "Unknown",
-        "name": "Ojinaga Sister City Relationship",
-        "intent": "Presidio and Ojinaga, Chihuahua maintain a functional cross-border relationship. Its full nature and formality is an assessment input for the Engagement Brief."
-      },
-      {
-        "year": "Unknown",
-        "name": "Comprehensive Plan",
-        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
-      },
-      {
-        "year": "June 2026",
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
         "name": "Lead Capital / Maachi Data Center Proposal",
         "intent": "A request for 200 to 250 hectares for a 100-megawatt data center with on-site gas generation went to the Presidio Municipal Development District on June 3, 2026. It has not been formally submitted."
+      },
+      {
+        "year": "Ongoing",
+        "briefs": ["exp", "eco"],
+        "name": "International Bridge of the Americas Operations",
+        "intent": "Presidio hosts an active international port of entry. PMDD, Presidio County and NADBank discussed a bridge ownership feasibility study in February 2025. Assessment will map crossing volume, commercial traffic and community priorities around the crossing."
+      },
+      {
+        "year": "Unknown",
+        "briefs": ["eng"],
+        "name": "Ojinaga Sister City Relationship",
+        "intent": "Presidio and Ojinaga, Chihuahua maintain a functional cross-border relationship. Assessment will establish its full nature and formality."
+      },
+      {
+        "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Comprehensive Plan",
+        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
     ],
     "briefs": {
@@ -2248,44 +2332,54 @@ var DATA ={
     "narrative": "The narrative observes Alpine as it exists today, in present tense: its landscape, history, economy and character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with the community before publication.",
     "planInputs": [
       {
-        "year": "2016",
-        "name": "Alpine Vision Plan",
-        "intent": "\"Alpine, Texas: A Vision for the Future,\" prepared in August 2016 by UTSA's Center for Urban and Regional Planning Research, covering downtown Alpine with citywide and regional data. Available on the City of Alpine website. Assessment will determine its current standing."
-      },
-      {
-        "year": "2022",
-        "name": "Strategic Plan Initiated",
-        "intent": "Strategic planning process launched in 2022, with community town halls from October to December. Adoption status unconfirmed. Assessment will determine current status and active commitments."
-      },
-      {
-        "year": "Ongoing",
-        "name": "Sul Ross State University Presence",
-        "intent": "Sul Ross State University anchors Alpine’s civic and economic identity. Institutional planning documents and enrollment trends are inputs to the Economy and Engagement Briefs. Assessment will establish the current relationship between the university and the community’s planning direction."
-      },
-      {
-        "year": "Unknown",
-        "name": "Comprehensive Plan",
-        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
-      },
-      {
         "year": "2026",
+        "briefs": ["exp", "eng"],
+        "extends": ["eco"],
         "name": "Smithsonian “Spark! Places of Innovation,” Local Deployment",
         "intent": "The Museum of the Big Bend hosted the exhibition July 3 to August 8, 2026, through the Texas Heritage Trails Program, coordinated statewide by the Texas Historical Commission."
       },
       {
-        "year": "July 2026",
+        "year": "2026",
+        "briefs": ["env", "eco"],
         "name": "TXD Regional Roundtable",
         "intent": "Texas Downtown Association regional roundtable scheduled in Alpine for July 9 and 10, 2026, for downtown professionals and preservation leaders, including a Texas Historical Commission session on the Certified Local Government program."
       },
       {
+        "year": "2026",
+        "briefs": ["env", "eng"],
+        "name": "Water in the Desert 2026, Local Deployment",
+        "intent": "Hosted at Sul Ross State University in February 2026, with more than 350 attendees, including landowners, scientists, groundwater conservation district leaders, legislators and judges."
+      },
+      {
+        "year": "2022",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Strategic Plan Initiated",
+        "intent": "Strategic planning process launched in 2022, with community town halls from October to December. Adoption status unconfirmed. Assessment will determine current status and active commitments."
+      },
+      {
+        "year": "2016",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Alpine Vision Plan",
+        "intent": "\"Alpine, Texas: A Vision for the Future,\" prepared in August 2016 by UTSA's Center for Urban and Regional Planning Research, covering downtown Alpine with citywide and regional data. Available on the City of Alpine website. Assessment will determine its current standing."
+      },
+      {
         "year": "Ongoing",
+        "briefs": ["eco", "eng"],
+        "name": "Sul Ross State University Presence",
+        "intent": "Sul Ross State University anchors Alpine’s civic and economic identity. Assessment will review its institutional planning documents and enrollment trends and establish the current relationship between the university and the community’s planning direction."
+      },
+      {
+        "year": "Ongoing",
+        "briefs": ["exp"],
+        "extends": ["eco"],
         "name": "Trost Trail, Local Deployment",
         "intent": "The Holland Hotel is a Trost & Trost design on the regional Trost Trail."
       },
       {
-        "year": "Feb 2026",
-        "name": "Water in the Desert 2026, Local Deployment",
-        "intent": "Hosted at Sul Ross State University in February 2026, with more than 350 attendees, including landowners, scientists, groundwater conservation district leaders, legislators and judges."
+        "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Comprehensive Plan",
+        "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
     ],
     "briefs": {
@@ -2370,7 +2464,7 @@ var DATA ={
     },
     "tile2": {
       "champion": "None confirmed",
-      "mayorjudge": "None confirmed",
+      "mayorjudge": "Catherine Eaves",
       "mayorjudge_label": "Mayor",
       "chamber": "Alpine Chamber of Commerce (status unconfirmed)",
       "chamber_link": false,
@@ -2413,11 +2507,13 @@ var DATA ={
     "planInputs": [
       {
         "year": "Ongoing",
+        "briefs": ["exp", "eco"],
         "name": "Gage Hotel Anchor Presence",
-        "intent": "The Gage Hotel is Marathon’s primary economic and visitor anchor, and one of the four Trost-designed hotels on the regional Trost Trail. Its operational direction and any expansion plans are inputs to the Experience and Economy Briefs. Direct engagement with Gage ownership is part of the assessment."
+        "intent": "The Gage Hotel is Marathon’s primary economic and visitor anchor, and one of the four Trost-designed hotels on the regional Trost Trail. Assessment covers its operational direction, any expansion plans and direct engagement with Gage ownership."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Comprehensive Plan",
         "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
@@ -2547,6 +2643,7 @@ var DATA ={
     "planInputs": [
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Community Planning Documents",
         "intent": "No community planning documents confirmed at time of writing. Sierra Blanca serves as the Hudspeth County seat. Assessment will identify what governance and planning capacity exists at both the community and county level."
       }
@@ -2675,14 +2772,16 @@ var DATA ={
     "narrative": "The narrative observes Fort Hancock as it exists today, in present tense: its landscape, history, economy and character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with the community before publication.",
     "planInputs": [
       {
-        "year": "Unknown",
-        "name": "Community Planning Documents",
-        "intent": "No community planning documents confirmed at time of writing. Assessment will identify what governance structure exists and what planning, if any, is active at the community level."
+        "year": "Ongoing",
+        "briefs": ["eco"],
+        "name": "Port of Entry: Fort Hancock",
+        "intent": "Fort Hancock hosts an international port of entry. Assessment will document current crossing volume and community priorities around the port."
       },
       {
-        "year": "Ongoing",
-        "name": "Port of Entry: Fort Hancock",
-        "intent": "Fort Hancock hosts an international port of entry. Border crossing activity is a material input to the Economy Brief. Assessment will document current crossing volume and community priorities around the port."
+        "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Community Planning Documents",
+        "intent": "No community planning documents confirmed at time of writing. Assessment will identify what governance structure exists and what planning, if any, is active at the community level."
       }
     ],
     "briefs": {
@@ -2810,6 +2909,7 @@ var DATA ={
     "planInputs": [
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Community Planning Documents",
         "intent": "No community planning documents confirmed at time of writing. Dell City is an agricultural community in the salt basin. Assessment will identify what governance and planning capacity exists."
       }
@@ -2938,19 +3038,29 @@ var DATA ={
     "narrative": "Pecos is the seat of Reeves County and its largest town, with 12,916 residents in the 2020 Census. It sits in the Delaware Basin of the Permian, where Reeves County ranks among the state's top oil and gas producers, and the energy economy shapes housing, roads and the Town's budget. The Town's 2030 Strategic Plan sets eight goals, from sustainable economic development to the visual image of Pecos, and its 2020 planning study maps land use and the water and wastewater work ahead through 2030. Reeves County is building a $54.5 million waterpark, and new solar development is coming before the county court.",
     "planInputs": [
       {
+        "year": "2026",
+        "briefs": ["exp"],
+        "name": "Tumble West Mural Fest",
+        "intent": "Reeves County approved $150,000 toward the Town of Pecos City’s $300,000 KPB Tumble West Mural Fest on September 3, 2026."
+      },
+      {
+        "year": "2020–2030",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Town of Pecos City 2020-2030 Comprehensive Plan",
+        "intent": "Prepared by GrantWorks, Inc. under a Texas CDBG planning grant and presented to council for acceptance on August 27, 2020. The Town also publishes a 2030 Strategic Plan with eight goals. Assessment will establish where both still guide decisions."
+      },
+      {
         "year": "Ongoing",
+        "briefs": ["eco"],
         "name": "Annual City Budget",
         "intent": "City of Pecos annual budgets on public record. Establishes the municipal fiscal baseline and active spending priorities. Assessment will map HOT allocations and capital commitments."
       },
       {
         "year": "Ongoing",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
         "name": "Reeves County Energy Sector Presence",
-        "intent": "Reeves County is among the most active oil and gas producing counties in the Permian Basin. Energy sector employment, workforce housing demand, and infrastructure pressure are inputs to the Economy and Environment Briefs. Assessment will document current conditions and community priorities."
-      },
-      {
-        "year": "2020-2030",
-        "name": "Town of Pecos City 2020-2030 Comprehensive Plan",
-        "intent": "Prepared by GrantWorks, Inc. under a Texas CDBG planning grant and presented to council for acceptance on August 27, 2020. The Town also publishes a 2030 Strategic Plan with eight goals. Assessment will establish where both still guide decisions."
+        "intent": "Reeves County is among the most active oil and gas producing counties in the Permian Basin. Assessment will document energy sector employment, workforce housing demand, infrastructure pressure and community priorities."
       }
     ],
     "briefs": {
@@ -3118,6 +3228,7 @@ var DATA ={
     "planInputs": [
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Community Planning Documents",
         "intent": "No community planning documents confirmed at time of writing. Assessment will identify what governance structure exists at the community level."
       }
@@ -3246,12 +3357,20 @@ var DATA ={
     "narrative": "The narrative observes Balmorhea as it exists today, in present tense: its landscape, history, economy and character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with the community before publication.",
     "planInputs": [
       {
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "name": "Main Street Improvement Program",
+        "intent": "The Balmorhea Economic Development Corporation’s Main Street improvement program, a business participation agreement for building improvements, was approved by council on September 14, 2026."
+      },
+      {
         "year": "Ongoing",
+        "briefs": ["exp", "eco"],
         "name": "Balmorhea State Park Anchor",
-        "intent": "Balmorhea State Park, managed by TPWD and anchored by the San Solomon Springs pool, operates under a daily visitor capacity. TPWD reported about 163,000 visitors in 2017, more than double the 2008 figure. The park's visitation patterns and TPWD management direction are inputs to the Experience and Economy Briefs. Assessment will establish the current relationship between the park and the community's planning direction."
+        "intent": "Balmorhea State Park, managed by TPWD and anchored by the San Solomon Springs pool, operates under a daily visitor capacity. TPWD reported about 163,000 visitors in 2017, more than double the 2008 figure. Assessment will review visitation patterns and TPWD management direction and establish the current relationship between the park and the community's planning direction."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Comprehensive Plan",
         "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
@@ -3342,7 +3461,7 @@ var DATA ={
       "mayorjudge_label": "Mayor",
       "chamber": "None confirmed",
       "chamber_link": false,
-      "edc": "None confirmed",
+      "edc": "Balmorhea Economic Development Corporation",
       "edc_link": false,
       "dmo": "None confirmed",
       "dmo_link": false,
@@ -3381,16 +3500,20 @@ var DATA ={
     "planInputs": [
       {
         "year": "Ongoing",
+        "briefs": ["eco"],
         "name": "Annual City Budget",
         "intent": "City of Fort Stockton annual budgets on public record. Establishes the municipal fiscal baseline and active spending priorities. Assessment will map HOT allocations and capital commitments."
       },
       {
         "year": "Ongoing",
+        "briefs": ["env", "exp"],
+        "extends": ["eco"],
         "name": "Historic Townsite Designation",
         "intent": "Fort Stockton’s historic townsite and Paisano Pete landmark are established civic identity assets. Assessment will document how the historic designation shapes current development standards and what planning exists around heritage tourism."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Comprehensive Plan",
         "intent": "No comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
@@ -3520,6 +3643,7 @@ var DATA ={
     "planInputs": [
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Community Planning Documents",
         "intent": "No community planning documents confirmed at time of writing. Sanderson serves as the Terrell County seat. Assessment will identify what governance and planning capacity exists at both the community and county level."
       }
@@ -3648,29 +3772,50 @@ var DATA ={
     "narrative": "The narrative observes Reeves County as it exists today, in present tense: its landscape, history, economy and civic character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with community input before publication.",
     "planInputs": [
       {
-        "year": "Ongoing",
-        "name": "Permian Basin Energy Sector Operations",
-        "intent": "Reeves County is among the highest-producing oil and gas counties in the Permian Basin. Energy sector activity drives workforce housing demand, infrastructure pressure, and municipal fiscal conditions across the county. Assessment will document current conditions and establish what the county’s civic leadership wants to govern alongside that activity."
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
+        "name": "County Capital Program",
+        "intent": "The October 26, 2026 Commissioners Court agenda carries owner’s representative agreements for a roping arena, a veterans project, a judiciary building, courthouse and parking plaza, the Reeves County Waterpark and the county jail."
       },
       {
-        "year": "Ongoing",
-        "name": "Annual City Budget: Pecos",
-        "intent": "City of Pecos annual budgets on public record. Establishes the primary municipal fiscal baseline within the county. Assessment will map HOT allocations and capital commitments."
-      },
-      {
-        "year": "Unknown",
-        "name": "Comprehensive Plan",
-        "intent": "No county comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
-      },
-      {
-        "year": "Oct 2026",
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
         "name": "Capshaw Solar Tax Abatement (Chapter 312)",
         "intent": "Commissioners Court took up a Chapter 312 tax abatement agreement with Stetson Renewables Holdings, LLC on October 13, 2026, for a 250 MW solar facility by Capshaw Solar, LLC in a proposed Capshaw Solar Reinvestment Zone, with an estimated $256 million in improvements."
       },
       {
         "year": "2026",
+        "briefs": ["exp", "eco"],
         "name": "Reeves County Waterpark",
         "intent": "Registered with TDLR in July 2026: owner Reeves County, 70 CR 118, estimated $54.5 million, construction scheduled September 2026 to December 2027."
+      },
+      {
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
+        "name": "Microsoft Data Center Campus, Pecos",
+        "intent": "Microsoft announced plans to build datacenters outside Pecos in an open letter to Pecos and Reeves County on June 22, 2026."
+      },
+      {
+        "year": "Ongoing",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
+        "name": "Permian Basin Energy Sector Operations",
+        "intent": "Reeves County is among the highest-producing oil and gas counties in the Permian Basin. Energy sector activity drives workforce housing demand, infrastructure pressure, and municipal fiscal conditions across the county. Assessment will document current conditions and establish what the county’s civic leadership wants to govern alongside that activity."
+      },
+      {
+        "year": "Ongoing",
+        "briefs": ["eco"],
+        "name": "Annual City Budget: Pecos",
+        "intent": "City of Pecos annual budgets on public record. Establishes the primary municipal fiscal baseline within the county. Assessment will map HOT allocations and capital commitments."
+      },
+      {
+        "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
+        "name": "Comprehensive Plan",
+        "intent": "No county comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
     ],
     "briefs": {
@@ -3797,17 +3942,28 @@ var DATA ={
     "narrative": "The narrative observes Pecos County as it exists today, in present tense: its landscape, history, economy and civic character. It anchors the Frame before any directives are set. It is drafted from the assessment and refined with community input before publication.",
     "planInputs": [
       {
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
+        "name": "GW Ranch Data Center Campus",
+        "intent": "Pacifico Energy’s GW Ranch, about 17 miles north of Fort Stockton, received a TCEQ air permit in February 2026 for up to 7.65 GW of gas generation for a data center campus. Reported in September 2026 as built for Amazon."
+      },
+      {
         "year": "Ongoing",
+        "briefs": ["eco"],
         "name": "Annual City Budget: Fort Stockton",
         "intent": "City of Fort Stockton annual budgets on public record. Establishes the primary municipal fiscal baseline within the county. Assessment will map HOT allocations and capital commitments."
       },
       {
         "year": "Ongoing",
+        "briefs": ["env", "exp"],
+        "extends": ["eco"],
         "name": "Historic Townsite: Fort Stockton",
         "intent": "Fort Stockton’s historic townsite is an established identity and tourism asset at the county seat. Assessment will document how the designation shapes current development standards and what planning exists around heritage tourism at the county scale."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Comprehensive Plan",
         "intent": "No county comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
@@ -3937,11 +4093,13 @@ var DATA ={
     "planInputs": [
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Community Planning Documents: Sanderson",
         "intent": "No planning documents confirmed at time of writing for Sanderson or Terrell County. Assessment will identify what governance and planning capacity exists at both the community and county level."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp", "eco", "eng"],
         "name": "Comprehensive Plan",
         "intent": "No county comprehensive plan confirmed at time of writing. Assessment will establish whether a plan exists, is in draft, or represents a gap."
       }
@@ -4070,49 +4228,67 @@ var DATA ={
     "narrative": "The regional narrative observes the Trans-Pecos as it exists today across its full extent, in present tense: its landscape, geography, economy and civic character. It anchors the Frame before any directives are set. It describes the region as one place, with each community’s character kept distinct. It is drafted from the aggregate of local assessments and refined through regional engagement before publication.",
     "planInputs": [
       {
+        "year": "2026",
+        "briefs": ["env", "eco"],
+        "extends": ["exp", "eng"],
+        "name": "State Pause on Data Center Permits",
+        "intent": "On September 21, 2026, the Governor directed TCEQ to halt data center permits until ERCOT and TWDB audits of grid and water impacts are complete."
+      },
+      {
+        "year": "2026",
+        "briefs": ["exp", "eng"],
+        "extends": ["eco"],
+        "name": "Smithsonian “Spark! Places of Innovation”",
+        "intent": "A Smithsonian Museum on Main Street exhibition, anchored at the Museum of the Big Bend in Alpine from July 3 to August 8, 2026, through the Texas Historical Commission's Texas Heritage Trails Program. Fort Davis hosted a companion exhibit at Hotel Limpia, with tie-in programming across the region."
+      },
+      {
+        "year": "2026",
+        "briefs": ["env"],
+        "name": "2026 Far West Texas Water Plan (Region E)",
+        "intent": "Regional water plan under Senate Bill 1, prepared by the Far West Texas Water Planning Group with the Rio Grande Council of Governments as administrative agent, and approved by the TWDB Board on January 22, 2026. Region E covers Brewster, Culberson, El Paso, Hudspeth, Jeff Davis, Presidio and Terrell counties. Reeves County, home to Pecos and Balmorhea, sits in Region F. The 2031 planning cycle is underway."
+      },
+      {
+        "year": "2024–2026",
+        "briefs": ["exp", "eco"],
+        "name": "HOT Use: Senate Interim Hearings",
+        "intent": "Trans-Pecos officials testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. SB 913 (2025), Alpine's request to repeal its 50 percent advertising requirement, did not pass. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027. The regional frame is the instrument through which a coordinated legislative strategy is built and sustained."
+      },
+      {
+        "year": "2022",
+        "briefs": ["env", "exp"],
+        "name": "Greater Big Bend International Dark Sky Reserve Designation",
+        "intent": "Designated in 2022 by DarkSky International with McDonald Observatory and The Nature Conservancy as partners. The largest International Dark Sky Reserve in the world at designation, covering Jeff Davis, Brewster and Presidio counties, part of Reeves County, and protected lands in Coahuila and Chihuahua. Multiple local frames reference it. The regional frame establishes how the designation is governed, promoted, and protected collectively."
+      },
+      {
         "year": "2016, 2021",
+        "briefs": ["eco", "eng"],
         "name": "West Texas Economic Development District: CEDS 2016-2020 and 2021-2025",
         "intent": "The WTEDD Comprehensive Economic Development Strategy, administered through the Rio Grande Council of Governments, covers Brewster, Culberson, El Paso, Hudspeth, Jeff Davis and Presidio counties. Reeves County sits outside the district. The 2016 strategy draft recommends creating a cooperative economic development body for the rural district counties, similar to the Borderplex Alliance. The 2021-2025 strategy period has closed, and assessment will confirm the status of the next cycle. Both documents establish what the region has already attempted and asked for."
       },
       {
         "year": "2021",
+        "briefs": ["env", "exp"],
         "name": "HB 4305: Dark Sky HOT Proposal (87th Legislature)",
         "intent": "Proposed authority for Presidio, Brewster and Jeff Davis county governments to use HOT revenue for dark sky infrastructure. It did not become law. The only dark sky HOT provision in the Tax Code (Section 351.10692, 2019) applies to Hill Country cities, so regional dark sky investment remains an open question for the regional frame."
       },
       {
-        "year": "2022",
-        "name": "Greater Big Bend International Dark Sky Reserve Designation",
-        "intent": "Designated in 2022 by DarkSky International with McDonald Observatory and The Nature Conservancy as partners. The largest International Dark Sky Reserve in the world at designation, covering Jeff Davis, Brewster and Presidio counties, part of Reeves County, and protected lands in Coahuila and Chihuahua. Multiple local frames reference it. The regional frame establishes how the designation is governed, promoted, and protected collectively."
-      },
-      {
-        "year": "2024–26",
-        "name": "HOT Use: Senate Interim Hearings",
-        "intent": "Trans-Pecos officials testified at a June 2024 Senate interim hearing in support of expanded HOT use for place investment. SB 913 (2025), Alpine's request to repeal its 50 percent advertising requirement, did not pass. The Senate's 2026 interim charge on HOT accountability was heard September 22, 2026, ahead of the 90th session in January 2027. The regional frame is the instrument through which a coordinated legislative strategy is built and sustained."
+        "year": "Ongoing",
+        "briefs": ["exp"],
+        "extends": ["eco"],
+        "name": "Trost Trail",
+        "intent": "A heritage tourism route created by the Texas Mountain Trail Region, connecting Henry Trost's hotel architecture in Marathon, Alpine, Marfa and Van Horn, extending to El Paso."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "eco"],
         "name": "RGCOG Regional Transportation and Infrastructure Plans",
         "intent": "Rio Grande Council of Governments regional transportation and infrastructure planning documents. Assessment will identify which documents are active, which have lapsed, and what the current planning baseline is for regional infrastructure decisions affecting Trans-Pecos communities."
       },
       {
         "year": "Unknown",
+        "briefs": ["env", "exp"],
         "name": "Texas Parks and Wildlife: Trans-Pecos Regional Plans",
-        "intent": "TPWD manages significant land in the Trans-Pecos region including Big Bend Ranch State Park and Balmorhea State Park. Institutional planning direction and visitor management documents are inputs to the regional Experience and Environment Briefs."
-      },
-      {
-        "year": "2026",
-        "name": "Smithsonian “Spark! Places of Innovation”",
-        "intent": "A Smithsonian Museum on Main Street exhibition, anchored at the Museum of the Big Bend in Alpine from July 3 to August 8, 2026, through the Texas Historical Commission's Texas Heritage Trails Program. Fort Davis hosted a companion exhibit at Hotel Limpia, with tie-in programming across the region."
-      },
-      {
-        "year": "Ongoing",
-        "name": "Trost Trail",
-        "intent": "A heritage tourism route created by the Texas Mountain Trail Region, connecting Henry Trost's hotel architecture in Marathon, Alpine, Marfa and Van Horn, extending to El Paso."
-      },
-      {
-        "year": "2026",
-        "name": "2026 Far West Texas Water Plan (Region E)",
-        "intent": "Regional water plan under Senate Bill 1, prepared by the Far West Texas Water Planning Group with the Rio Grande Council of Governments as administrative agent, and approved by the TWDB Board on January 22, 2026. Region E covers Brewster, Culberson, El Paso, Hudspeth, Jeff Davis, Presidio and Terrell counties. Reeves County, home to Pecos and Balmorhea, sits in Region F. The 2031 planning cycle is underway."
+        "intent": "TPWD manages significant land in the Trans-Pecos region including Big Bend Ranch State Park and Balmorhea State Park. Assessment covers its institutional planning direction and visitor management documents."
       }
     ],
     "briefs": {
@@ -4342,9 +4518,9 @@ function showLF(id){
 
   var piEl = document.getElementById("plan-inputs");
   if(d.planInputs && d.planInputs.length){
-    var h = '<div class="plan-inputs-label">Potential Inputs for Assessment</div>';
+    var h = '<div class="plan-inputs-label">Potential Inputs for Assessment</div><div class="plan-inputs-legend"><span><span class="brief-dot env"></span>Environment</span><span><span class="brief-dot exp"></span>Experience</span><span><span class="brief-dot eco"></span>Economy</span><span><span class="brief-dot eng"></span>Engagement</span><span><span class="brief-dot open"></span>Extended</span></div>';
     h += d.planInputs.map(function(p){
-      return '<div class="plan-input"><span class="plan-input-year">'+p.year+'</span><div><div class="plan-input-name">'+p.name+'</div><div class="plan-input-intent">'+p.intent+'</div></div></div>';
+      return '<div class="plan-input"><span class="plan-input-year">'+p.year+'</span><div><div class="plan-input-name">'+p.name+(p.briefs?'<span class="plan-input-briefs">'+["env","exp","eco","eng"].map(function(b){return p.briefs.indexOf(b)>-1?'<span class="brief-dot '+b+'"></span>':((p.extends||[]).indexOf(b)>-1?'<span class="brief-dot open '+b+'"></span>':'');}).join('')+'</span>':'')+'</div><div class="plan-input-intent">'+p.intent+'</div></div></div>';
     }).join("");
     piEl.innerHTML = h;
     piEl.style.display = "block";
@@ -4464,6 +4640,12 @@ function switchTab(b){
 <h2>Revisions and AI Disclosure</h2>
 <p>Research and information sourcing for this framework use agentic AI tools to cover the volume of public records across the region. Every entry is checked against a primary source before publication, each substantive revision is logged here with its date and source, and the communities themselves have the final word.</p>
 <p>This log begins October 20, 2026, with a full review of the ten civic frames and the Regional Frame.</p>
+
+<h3>November 5, 2026</h3>
+<h4>Officials and records</h4>
+<ul>
+<li>Alpine mayor and Jeff Davis County judge-elect added from unofficial November 3 results. Brewster County ESD #2 result added. Marfa zoning and CDBG entries updated from council minutes. Balmorhea EDC added. Data center, mine permit, and county capital entries added for Brewster, Pecos, Reeves and Presidio counties and the Regional Frame. Sources: council and commissioners court records, Marfa Public Radio, Big Bend Sentinel, Microsoft, Office of the Governor.</li>
+</ul>
 
 <h3>November 4, 2026</h3>
 <h4>All frames</h4>
